@@ -1,42 +1,13 @@
 import React from 'react';
 import styles from './Menu.module.scss';
 import { motion } from 'framer-motion';
+import pages from '../../cms/data/websiteLayout/pages.json';
 
 type Props = {
   setMenuIsOpen: any;
 };
 
 const Menu = (props: Props) => {
-  const menuItems = [
-    {
-      name: 'Home',
-      link: '#intro',
-    },
-    {
-      name: 'About',
-      link: '#about',
-    },
-
-    {
-      name: 'Expertise',
-      link: '#expertise',
-    },
-
-    {
-      name: 'Journey',
-      link: '#journey',
-    },
-    {
-      name: 'Portfolio',
-      link: '#portfolio',
-    },
-
-    {
-      name: 'Contact',
-      link: '#contact',
-    },
-  ];
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -48,7 +19,7 @@ const Menu = (props: Props) => {
       className={styles.container}
     >
       <div className={styles.menuItems}>
-        {menuItems.map((item, index) => (
+        {pages.pages.map((item, index) => (
           <motion.a
             whileHover={{
               scale: 1.05,
@@ -71,9 +42,9 @@ const Menu = (props: Props) => {
             href={item.link}
             className={styles.menuItem}
             onClick={() => props.setMenuIsOpen(false)}
-            key={item.name}
+            key={item.title}
           >
-            {item.name}
+            {item.title}
           </motion.a>
         ))}
       </div>

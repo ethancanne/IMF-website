@@ -1,5 +1,5 @@
 import styles from './Page.module.scss';
-import Header from '../header/NavBar.layout';
+import Header from '../navBar/NavBar.layout';
 import Footer from '../../layout/footer/Footer.layout';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';

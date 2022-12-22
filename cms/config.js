@@ -9,18 +9,18 @@ module.exports = {
   public_folder: 'img',
   collections: [
     {
-      label: 'Pages',
-      name: 'pages',
+      label: 'Website Layout',
+      name: 'website-layout',
       format: 'json',
       files: [
         {
           label: 'Pages',
           name: 'pages',
-          file: 'cms/data/pages.json',
+          file: 'cms/data/websiteLayout/pages.json',
           fields: [
             {
               label: 'Pages',
-              name: 'Pages',
+              name: 'pages',
               widget: 'list',
               allow_add: false,
               fields: [
