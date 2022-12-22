@@ -17,10 +17,5 @@
       "link": "/get-involved"
     }
   ],
-  "Pages": [
-    {
-      "title": "Home",
-      "link": "/"
-    }
-  ]
+  "Pages": []
 }
