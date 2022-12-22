@@ -16,5 +16,11 @@
       "title": "Get Involved",
       "link": "/get-involved"
     }
+  ],
+  "Pages": [
+    {
+      "title": "Home",
+      "link": "/"
+    }
   ]
 }
