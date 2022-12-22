@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Page from '../layout/page/Page.layout';
 type Props = {};
 
-const aboutUs = ({}: Props) => {
+const Causes = ({}: Props) => {
   return (
     <Page>
       <div></div>
@@ -10,4 +10,4 @@ const aboutUs = ({}: Props) => {
   );
 };
 
-export default aboutUs;
+export default Causes;

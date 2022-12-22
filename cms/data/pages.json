@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "title": "Home",
+      "title": "Homn e",
       "link": "/"
     },
     {
@@ -15,12 +15,6 @@
     {
       "title": "Get Involved",
       "link": "/get-involved"
-    }
-  ],
-  "Pages": [
-    {
-      "title": "Home",
-      "link": "/"
     }
   ]
 }

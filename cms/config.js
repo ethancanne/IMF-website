@@ -2,14 +2,15 @@ module.exports = {
   cms_manual_init: true,
   backend: {
     name: 'github',
+    repo: 'ethancanne/IMF-website',
     branch: 'main',
   },
   media_folder: 'public/img',
   public_folder: 'img',
   collections: [
     {
-      name: 'pages',
       label: 'Pages',
+      name: 'pages',
       format: 'json',
       files: [
         {
@@ -21,7 +22,7 @@ module.exports = {
               label: 'Pages',
               name: 'Pages',
               widget: 'list',
-              allow_add: true,
+              allow_add: false,
               fields: [
                 {
                   label: 'Title',
