@@ -1,0 +1,42 @@
+// $blue: #72a5e5;
+// $green: #7fc3ae;
+// $orange: #f2a365;
+// $red: #d16363;
+
+// .blue {
+//   color: $blue !important;
+//   background: linear-gradient(315deg, $blue, darken($blue, 30%));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// .green {
+//   color: $green;
+//   background: linear-gradient(315deg, $green, darken($green, 20%));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// .orange {
+//   color: $orange;
+//   background: linear-gradient(315deg, $orange, rgb(131, 95, 28));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+$width: 990px;
+$fz-xl: 70px;
+$fz-lg: 50px;
+$fz-md: 30px;
+$fz-sm: 25px;
+$fz-xs: 20px;
+$fz-xxs: 15px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width:#{$width}) {
+    @content;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../styles/globals.scss';
+.container {
+  color: rgb(213, 213, 213);
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+  backdrop-filter: blur(10px);
+  padding-bottom: 50px;
+
+  .name {
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+  .socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+    .socialLink {
+      margin: 0 10px;
+      font-size: 30px;
+      color: rgb(213, 213, 213);
+    }
+  }
+}
