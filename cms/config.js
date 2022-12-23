@@ -34,6 +34,16 @@ module.exports = {
                   name: 'link',
                   widget: 'string',
                 },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'text',
+                },
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
               ],
             },
           ],

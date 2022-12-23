@@ -2,6 +2,7 @@ import styles from './NavBar.module.scss';
 type Props = {
   setMenuIsOpen: any;
   menuIsOpen: any;
+  isSubtle: boolean;
 };
 import { BsGridFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
@@ -14,12 +15,14 @@ const NavBar = (props: Props) => {
   const router = useRouter();
   return (
     <>
-      <div className={styles.container}>
+      <div
+        className={`${styles.container} ${props.isSubtle ? styles.subtle : ''}`}
+      >
         <Link href="/" className={styles.logo}>
           <Image
-            src="/logo.png"
-            width={200}
-            height={70}
+            src={`${props.isSubtle ? '/white-logo.png' : '/logo.png'}`}
+            width={props.isSubtle ? 200 : 200}
+            height={props.isSubtle ? 100 : 70}
             style={{ objectFit: 'contain' }}
             alt="logo"
           />
