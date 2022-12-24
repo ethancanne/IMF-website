@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Page from '../layout/page/Page.layout';
 import Intro from '../views/home/intro/Intro.view';
+import Scripture from '../views/home/scripture/Scripture.view';
+import Stat from '../views/home/stat/Stat.view';
 type Props = {};
 
 const index = ({}: Props) => {
@@ -12,6 +14,8 @@ const index = ({}: Props) => {
       image="/img/home-header.jpeg"
     >
       <Intro />
+      <Stat />
+      <Scripture />
     </Page>
   );
 };

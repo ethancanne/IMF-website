@@ -1,0 +1,26 @@
+@import '../../../styles/globals.scss';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 6rem 2rem 6rem;
+  line-height: 60px;
+
+  span {
+    font-weight: 900;
+    color: $red;
+  }
+  .before {
+    color: rgb(88, 88, 88);
+    font-weight: 300;
+    font-size: $fz-sm;
+  }
+  .after {
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: $fz-lg;
+    line-height: 80px;
+  }
+}
