@@ -21,7 +21,7 @@ const Header = (props: Props) => {
         <h1 className={styles.title}>{props.title}</h1>
         <p className={styles.subTitle}>{props.subTitle}</p>
       </div>
-      {props.donate && <DonateButton />}
+      {props.donate && <DonateButton light={true} />}
     </div>
   );
 };

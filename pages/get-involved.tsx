@@ -4,7 +4,11 @@ type Props = {};
 
 const GetInvolved = ({}: Props) => {
   return (
-    <Page>
+    <Page
+      isSubPage={true}
+      title="Get Involved"
+      image="/img/get-involved-header.jpeg"
+    >
       <div></div>
     </Page>
   );

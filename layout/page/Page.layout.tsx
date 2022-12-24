@@ -5,8 +5,14 @@ import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Menu from '../menu/Menu.layout';
 import Head from 'next/head';
+import Header from '../header/Header.layout';
+import { motion } from 'framer-motion';
 type Props = {
   children: React.ReactNode;
+  title: string;
+  subTitle?: string;
+  isSubPage?: boolean;
+  image?: string;
 };
 
 const Page = (props: Props) => {
@@ -21,7 +27,16 @@ const Page = (props: Props) => {
   }, []);
 
   return (
-    <div className={styles.pageContainer}>
+    <motion.div
+      className={styles.pageContainer}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0,
+        type: 'spring',
+        stiffness: 100,
+      }}
+    >
       <Head>
         <title>IMF - Haiti Hospital</title>
       </Head>
@@ -33,9 +48,16 @@ const Page = (props: Props) => {
       <AnimatePresence initial={false} mode="wait">
         {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}
       </AnimatePresence>
+      <Header
+        title={props.title}
+        subTitle={props.subTitle}
+        donate={!props.isSubPage}
+        isSubPage={props.isSubPage}
+        image={props.image}
+      />
       {props.children}
       <Footer />{' '}
-    </div>
+    </motion.div>
   );
 };
 

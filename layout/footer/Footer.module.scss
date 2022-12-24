@@ -1,36 +1,93 @@
 @import '../../styles/globals.scss';
-.container {
-  color: rgb(213, 213, 213);
-  font-size: 18px;
+.getInvolvedContainer {
   text-align: center;
-  background-color: rgb(29, 29, 29);
-  backdrop-filter: blur(10px);
-  padding-bottom: 50px;
+  padding: 80px;
+  h1 {
+    color: $red;
 
-  .name {
-    font-weight: bolder;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
+    font-size: $fz-lg;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
-  .text {
-    font-weight: normal;
-    padding: 0;
-    margin: 0;
+  p {
+    color: black;
+
+    font-size: $fz-sm;
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
-  .socialContainer {
+}
+.footerContainer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-top: $blue 5px solid;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .aboutContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    display: none;
-    @include mobile {
-      display: block;
+    justify-content: center;
+    flex: 0.8;
+
+    .logo {
+      margin-right: 2rem;
     }
-    .socialLink {
-      margin: 0 10px;
-      font-size: 30px;
-      color: rgb(213, 213, 213);
+    .about {
+      h1 {
+        color: $red;
+        font-size: $fz-xs;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        color: rgb(69, 69, 69);
+        font-size: $fz-xxs;
+        font-weight: 300;
+        margin: 0;
+        width: 70%;
+        line-height: 25px;
+      }
+    }
+  }
+  .contactContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex: 0.2;
+
+    .contact {
+      width: 100%;
+
+      h1 {
+        color: $red;
+        font-size: $fz-xs;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        color: rgb(69, 69, 69);
+        font-size: $fz-xxs;
+        font-weight: 100;
+        margin: 0;
+        line-height: 25px;
+        margin-bottom: 15px;
+      }
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      .facebook {
+        color: #1778f2;
+      }
     }
   }
 }

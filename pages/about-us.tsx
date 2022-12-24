@@ -5,8 +5,8 @@ type Props = {};
 
 const AboutUs = ({}: Props) => {
   return (
-    <Page>
-      <Header title="About Us" isSubPage={true} />
+    <Page isSubPage={true} title="About Us" image="/img/about-us-header.jpeg">
+      <div></div>
     </Page>
   );
 };

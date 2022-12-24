@@ -1,12 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import Page from '../layout/page/Page.layout';
+import Header from '../layout/header/Header.layout';
 type Props = {};
 
 const Causes = ({}: Props) => {
   return (
-    <Page>
-      <div></div>
-    </Page>
+    <Page
+      isSubPage={true}
+      title="Causes"
+      image="/img/causes-header.jpeg"
+    ></Page>
   );
 };
 
