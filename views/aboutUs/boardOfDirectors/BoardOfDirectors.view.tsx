@@ -1,53 +1,15 @@
 import styles from './BoardOfDirectors.module.scss';
 import Image from 'next/image';
 import Card from '../../../components/card/Card.component';
-
+import aboutUs from '../../../cms/data/content/aboutUs.json';
 type Props = {};
 
 const BoardOfDirectors = (props: Props) => {
-  const directors = [
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-    {
-      name: 'John Doe',
-      position: 'President',
-      image: '/img/campus.jpeg',
-    },
-  ];
-
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Board of Directors</h1>
       <div className={styles.directors}>
-        {directors.map((director) => (
+        {aboutUs.boardOfDirectors.map((director) => (
           <Card
             title={director.name}
             description={director.position}
@@ -56,15 +18,9 @@ const BoardOfDirectors = (props: Props) => {
         ))}
       </div>
       <div className={styles.staff}>
-        <p>
-          It would be a disservice to not mention the Haitian staff serving HEB.
-          Nothing we do would be possible without their talents and labors of
-          everyone from the medical staff, to the administrative staff, to the
-          maintenance staff, to the support staff. They too are an integral part
-          of IMF.
-        </p>
+        <p>{aboutUs.haitianStaff.description}</p>
         <Image
-          src="/img/home-header.jpeg"
+          src={'/' + aboutUs.haitianStaff.image}
           alt="Campus"
           width={500}
           height={300}

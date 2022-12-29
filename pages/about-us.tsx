@@ -7,6 +7,7 @@ import MapCampus from '../views/aboutUs/mapCampus/MapCampus.view';
 import Missionaries from '../views/aboutUs/missionaries/Missionaries.view';
 import BoardOfDirectors from '../views/aboutUs/boardOfDirectors/BoardOfDirectors.view';
 import EnabledToDo from '../views/aboutUs/enabledToDo/EnabledToDo.view';
+import pages from '../cms/data/websiteLayout/pages.json';
 type Props = {};
 
 const AboutUs = ({}: Props) => {

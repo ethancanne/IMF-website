@@ -11,7 +11,7 @@ const Card = (props: Props) => {
     <div className={styles.container}>
       {props.image && (
         <Image
-          src={props.image}
+          src={'/' + props.image}
           alt={props.title}
           width={300}
           height={200}

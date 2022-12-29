@@ -17,7 +17,7 @@ const MissionaryItem = (props: Props) => {
       </div>
 
       <Image
-        src={props.image}
+        src={'/' + props.image}
         alt={props.name}
         className={styles.image}
         width={300}

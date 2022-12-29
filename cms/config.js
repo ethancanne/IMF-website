@@ -144,6 +144,11 @@ module.exports = {
                   widget: 'string',
                 },
                 {
+                  label: 'Position',
+                  name: 'position',
+                  widget: 'string',
+                },
+                {
                   label: 'Description',
                   name: 'description',
                   widget: 'markdown',
@@ -166,7 +171,11 @@ module.exports = {
                   name: 'name',
                   widget: 'string',
                 },
-
+                {
+                  label: 'Position',
+                  name: 'position',
+                  widget: 'string',
+                },
                 {
                   label: 'Image',
                   name: 'image',

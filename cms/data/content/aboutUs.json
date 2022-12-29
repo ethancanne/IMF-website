@@ -27,11 +27,13 @@
   "missionaries": [
     {
       "name": "Steve and Faith Leach",
+      "position": "Missionary",
       "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
       "image": "img/campus.jpeg"
     },
     {
       "name": "Steve and Faith Leach",
+      "position": "Missionary",
       "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
       "image": "img/home-card-health.jpeg"
     }
@@ -39,14 +41,17 @@
   "boardOfDirectors": [
     {
       "name": "John Doe",
+      "position": "Missionary",
       "image": "img/home-card-health.jpeg"
     },
     {
       "name": "John Doe",
+      "position": "Missionary",
       "image": "img/home-card-health.jpeg"
     },
     {
       "name": "John Doe",
+      "position": "Missionary",
       "image": "img/campus.jpeg"
     }
   ],
