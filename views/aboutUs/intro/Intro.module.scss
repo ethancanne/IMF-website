@@ -1,0 +1,31 @@
+@import '../../../styles/globals.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+  .title {
+    font-size: $fz-lg;
+    font-weight: 900;
+    color: $red;
+    margin: 0;
+    padding: 0;
+  }
+  .subTitle {
+    font-size: $fz-sm;
+    font-weight: 600;
+    color: $blue;
+    margin-bottom: 10px;
+  }
+  .content {
+    font-size: $fz-xs;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 clamp(15vw, 10vw, 20vw);
+  }
+}
