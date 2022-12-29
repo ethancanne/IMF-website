@@ -1,0 +1,68 @@
+{
+  "intro": "International Missionary Fellowship is a Christian based, non denominational 501(c)3 nonprofit organization that strives to share the love and compassion of our Lord through service to the people of Bombardopolis Haiti. Our main ministry is the administration, supplying and funding of Hospital Evangelique Bombardopolis (HEB), the only hospital that serves the 50,000 people in the region. We also minister to their physical and spiritual needs as well with programs ranging from food and water to the need to hear and learn about Christ Jesus.",
+  "history": {
+    "description": "IMF had its beginnings in the 1970’s in Jamaica where Tom Northen our founder had an established missionary effort underway. After a providential trip to northwest Haiti and Bombardoplis the mission migrated to that region and has been there ever since. The Lord has grown the hospital from its simple beginnings to a well run hospital providing continuous quality health care to the people in the region and we are continuing to grow. HEB has recently been cited and recognized by the Haitian Health Department as the best run mixed institution in the northwest region and Haiti. Not only is HEB providing top notch health care it is also one of the largest employers in the area. With the exception of the director, all positions are staffed by Haitians, from the doctors to the guards.",
+    "images": [
+      {
+        "image": "img/campus.jpeg"
+      },
+      {
+        "image": "img/campus.jpeg"
+      },
+      {
+        "image": "img/home-card-health.jpeg"
+      }
+    ]
+  },
+  "map-and-campus": {
+    "map": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Ante in nibh mauris cursus mattis molestie a. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Ac turpis egestas sed tempus urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Adipiscing elit duis tristique sollicitudin nibh sit amet. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Semper risus in hendrerit gravida rutrum quisque. Eget duis at tellus at urna condimentum mattis pellentesque. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.",
+      "image": "img/campus.jpeg"
+    },
+    "campus": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Ante in nibh mauris cursus mattis molestie a. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Ac turpis egestas sed tempus urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Adipiscing elit duis tristique sollicitudin nibh sit amet. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Semper risus in hendrerit gravida rutrum quisque. Eget duis at tellus at urna condimentum mattis pellentesque. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.",
+      "image": "img/home-card-health.jpeg"
+    }
+  },
+  "missionaries": [
+    {
+      "name": "Steve and Faith Leach",
+      "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
+      "image": "img/campus.jpeg"
+    },
+    {
+      "name": "Steve and Faith Leach",
+      "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
+      "image": "img/home-card-health.jpeg"
+    }
+  ],
+  "board-of-directors": [
+    {
+      "name": "John Doe",
+      "image": "img/home-card-health.jpeg"
+    },
+    {
+      "name": "John Doe",
+      "image": "img/home-card-health.jpeg"
+    },
+    {
+      "name": "John Doe",
+      "image": "img/campus.jpeg"
+    }
+  ],
+  "haitian-staff": {
+    "description": "It would be a disservice to not mention the Haitian staff serving HEB. Nothing we do would be possible without their talents and labors of everyone from the medical staff, to the administrative staff, to the maintenance staff, to the support staff. They too are an integral part of IMF.",
+    "image": "img/home-header.jpeg"
+  },
+  "enabled-to-do": [
+    {
+      "description": "Over 50% of blank happened"
+    },
+    {
+      "description": "Over 50% of blank happened"
+    },
+    {
+      "description": "Over 50% of blank happened"
+    }
+  ]
+}
