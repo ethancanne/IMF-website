@@ -10,7 +10,7 @@ module.exports = {
   collections: [
     {
       label: 'Website Layout',
-      name: 'website-layout',
+      name: 'websiteLayout',
       format: 'json',
       files: [
         {
@@ -52,12 +52,12 @@ module.exports = {
     },
     {
       label: 'Page Content',
-      name: 'page-content',
+      name: 'pageContent',
       format: 'json',
       files: [
         {
           label: 'About Us',
-          name: 'about-us',
+          name: 'aboutUs',
           file: 'cms/data/content/aboutUs.json',
           fields: [
             {
@@ -93,7 +93,7 @@ module.exports = {
 
             {
               label: 'Map and Campus Section',
-              name: 'map-and-campus',
+              name: 'mapAndCampus',
               widget: 'object',
               fields: [
                 {
@@ -157,7 +157,7 @@ module.exports = {
             },
             {
               label: 'Board of Directors Section',
-              name: 'board-of-directors',
+              name: 'boardOfDirectors',
               widget: 'list',
               allow_add: true,
               fields: [
@@ -176,7 +176,7 @@ module.exports = {
             },
             {
               label: 'Haitian Staff Section',
-              name: 'haitian-staff',
+              name: 'haitianStaff',
               widget: 'object',
               fields: [
                 {
@@ -195,7 +195,7 @@ module.exports = {
 
             {
               label: 'Enabled To Do Section',
-              name: 'enabled-to-do',
+              name: 'enabledToDo',
               widget: 'list',
               allow_add: true,
               fields: [

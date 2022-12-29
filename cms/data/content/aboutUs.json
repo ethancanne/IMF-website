@@ -14,7 +14,7 @@
       }
     ]
   },
-  "map-and-campus": {
+  "mapAndCampus": {
     "map": {
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Ante in nibh mauris cursus mattis molestie a. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Ac turpis egestas sed tempus urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Adipiscing elit duis tristique sollicitudin nibh sit amet. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Semper risus in hendrerit gravida rutrum quisque. Eget duis at tellus at urna condimentum mattis pellentesque. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.",
       "image": "img/campus.jpeg"
@@ -36,7 +36,7 @@
       "image": "img/home-card-health.jpeg"
     }
   ],
-  "board-of-directors": [
+  "boardOfDirectors": [
     {
       "name": "John Doe",
       "image": "img/home-card-health.jpeg"
@@ -50,11 +50,11 @@
       "image": "img/campus.jpeg"
     }
   ],
-  "haitian-staff": {
+  "haitianStaff": {
     "description": "It would be a disservice to not mention the Haitian staff serving HEB. Nothing we do would be possible without their talents and labors of everyone from the medical staff, to the administrative staff, to the maintenance staff, to the support staff. They too are an integral part of IMF.",
     "image": "img/home-header.jpeg"
   },
-  "enabled-to-do": [
+  "enabledToDo": [
     {
       "description": "Over 50% of blank happened"
     },
