@@ -5,11 +5,9 @@ type Props = {};
 
 const Causes = ({}: Props) => {
   return (
-    <Page
-      isSubPage={true}
-      title="Causes"
-      image="/img/causes-header.jpeg"
-    ></Page>
+    <Page isSubPage={true} title="Causes" image="/img/causes-header.jpeg">
+      <div></div>
+    </Page>
   );
 };
 
