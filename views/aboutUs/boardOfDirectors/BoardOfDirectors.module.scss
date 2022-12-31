@@ -1,7 +1,8 @@
 @import '../../../styles//globals.scss';
 
+@import '../../../styles/globals.scss';
 .container {
-  padding: 50px clamp(15vw, 10vw, 20vw);
+  padding: $pagePadding;
   .title {
     font-size: $fz-lg;
     font-weight: 900;
@@ -18,7 +19,7 @@
   .directors {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
+    gap: 50px;
   }
 
   .staff {

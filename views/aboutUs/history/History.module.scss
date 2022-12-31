@@ -1,7 +1,7 @@
 @import '../../../styles/globals.scss';
 .container {
+  padding: $pagePadding;
   width: 100%;
-  padding: 50px clamp(15vw, 10vw, 20vw);
   .content {
     font-size: 1rem;
     color: rgb(34, 34, 34);
@@ -33,7 +33,7 @@
   .images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
+    gap: 50px;
 
     margin: 0;
     padding: 0;

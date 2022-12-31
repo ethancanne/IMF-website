@@ -1,7 +1,7 @@
 @import '../../../styles/globals.scss';
 .container {
+  padding: $pagePadding;
   width: 100%;
-  padding: 50px clamp(15vw, 10vw, 20vw);
   h1 {
     font-size: $fz-lg;
     font-weight: 900;

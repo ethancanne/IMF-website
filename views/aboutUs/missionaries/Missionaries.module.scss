@@ -1,6 +1,6 @@
 @import '../../../styles/globals.scss';
 .container {
-  padding: 50px clamp(15vw, 10vw, 20vw);
+  padding: $pagePadding;
   .title {
     font-size: $fz-lg;
     font-weight: 900;

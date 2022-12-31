@@ -2,6 +2,7 @@ import styles from './BoardOfDirectors.module.scss';
 import Image from 'next/image';
 import Card from '../../../components/card/Card.component';
 import aboutUs from '../../../cms/data/content/aboutUs.json';
+import ReactMarkdown from 'react-markdown';
 type Props = {};
 
 const BoardOfDirectors = (props: Props) => {
@@ -18,7 +19,9 @@ const BoardOfDirectors = (props: Props) => {
         ))}
       </div>
       <div className={styles.staff}>
-        <p>{aboutUs.haitianStaff.description}</p>
+        <p>
+          <ReactMarkdown>{aboutUs.haitianStaff.description}</ReactMarkdown>
+        </p>
         <Image
           src={'/' + aboutUs.haitianStaff.image}
           alt="Campus"

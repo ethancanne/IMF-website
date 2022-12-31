@@ -1,5 +1,6 @@
 import styles from './MissionaryItem.module.scss';
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 type Props = {
   name: string;
   position: string;
@@ -13,7 +14,9 @@ const MissionaryItem = (props: Props) => {
       <div className={styles.content}>
         <h1 className={styles.name}>{props.name}</h1>
         <h2 className={styles.position}>{props.position}</h2>
-        <p className={styles.description}>{props.description}</p>
+        <p className={styles.description}>
+          <ReactMarkdown>{props.description}</ReactMarkdown>
+        </p>
       </div>
 
       <Image

@@ -217,6 +217,118 @@ module.exports = {
             },
           ],
         },
+
+        {
+          label: 'Home',
+          name: 'home',
+          file: 'cms/data/content/home.json',
+          fields: [
+            {
+              label: 'Description Cards Section',
+              name: 'cards',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
+              ],
+            },
+            {
+              label: 'Short Description Section',
+              name: 'shortDescription',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Top Description',
+                  name: 'topDescription',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'Bottom Description',
+                  name: 'bottomDescription',
+                  widget: 'markdown',
+                },
+              ],
+            },
+            {
+              label: 'Statistic Section',
+              name: 'statistic',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Before Statistic',
+                  name: 'beforeStatistic',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'After Statistic',
+                  name: 'afterStatistic',
+                  widget: 'markdown',
+                },
+              ],
+            },
+            {
+              label: 'Newsletter Section',
+              name: 'newsletters',
+              widget: 'list',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'link',
+                  name: 'link',
+                  widget: 'string',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Causes',
+          name: 'causes',
+          file: 'cms/data/content/causes.json',
+          fields: [
+            {
+              label: 'Top Description',
+              name: 'topDescription',
+              widget: 'markdown',
+            },
+            {
+              label: 'Causes',
+              name: 'causes',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
   ],

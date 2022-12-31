@@ -1,6 +1,7 @@
 import styles from './MapCampus.module.scss';
 import Image from 'next/image';
 import aboutUs from '../../../cms/data/content/aboutUs.json';
+import ReactMarkdown from 'react-markdown';
 
 type Props = {};
 
@@ -17,12 +18,16 @@ const MapCampus = (props: Props) => {
           height={800}
           className={styles.image}
         />
-        <p className={styles.content}>{aboutUs.mapAndCampus.map.description}</p>
+        <p className={styles.content}>
+          <ReactMarkdown>{aboutUs.mapAndCampus.map.description}</ReactMarkdown>
+        </p>
       </div>
 
       <div className={styles.section}>
         <p className={styles.content}>
-          {aboutUs.mapAndCampus.campus.description}
+          <ReactMarkdown>
+            {aboutUs.mapAndCampus.campus.description}
+          </ReactMarkdown>
         </p>
         <Image
           src={'/' + aboutUs.mapAndCampus.campus.image}

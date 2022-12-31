@@ -3,6 +3,7 @@ import Page from '../layout/page/Page.layout';
 import Intro from '../views/home/intro/Intro.view';
 import Scripture from '../views/home/scripture/Scripture.view';
 import Stat from '../views/home/stat/Stat.view';
+import Feed from '../views/home/feed/Feed.view';
 type Props = {};
 
 const index = ({}: Props) => {
@@ -16,6 +17,7 @@ const index = ({}: Props) => {
       <Intro />
       <Stat />
       <Scripture />
+      <Feed />
     </Page>
   );
 };

@@ -1,4 +1,6 @@
 import styles from './Stat.module.scss';
+import ReactMarkdown from 'react-markdown';
+import home from '../../../cms/data/content/home.json';
 
 type Props = {};
 
@@ -6,14 +8,10 @@ const Stat = (props: Props) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.before}>
-        <span>Before 1970, over 70%</span> of babies and many mothers Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
+        <ReactMarkdown>{home.statistic.beforeStatistic}</ReactMarkdown>
       </h1>
       <h1 className={styles.after}>
-        <span>Now, less than 5% </span>Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        <ReactMarkdown>{home.statistic.afterStatistic}</ReactMarkdown>
       </h1>
     </div>
   );
