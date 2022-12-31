@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100%;
   background-color: #ffffff;
-  padding: 100px 0;
+  padding: $pagePadding;
   text-align: center;
   .title {
     font-size: $fz-lg;
@@ -26,6 +26,5 @@
     color: #666;
     text-align: center;
     margin-bottom: 1rem;
-    padding: 0 clamp(15vw, 10vw, 20vw);
   }
 }

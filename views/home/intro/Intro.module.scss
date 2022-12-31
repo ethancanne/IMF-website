@@ -9,6 +9,9 @@
     top: -40px;
     z-index: 90;
     width: 80%;
+    @include mobile {
+      width: 95%;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +42,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 3rem 5rem 5rem 5rem;
+      padding: $pagePadding;
       margin-top: 1rem;
       font-size: $fz-sm;
 

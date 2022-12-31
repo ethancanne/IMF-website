@@ -10,9 +10,6 @@
   box-shadow: none;
   color: $red;
   font-family: 'Metropolis';
-  @include mobile {
-    display: none;
-  }
 
   &.light {
     border: white 3px solid !important;

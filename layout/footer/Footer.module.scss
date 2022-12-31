@@ -8,6 +8,10 @@
     font-size: $fz-lg;
     font-weight: 700;
     margin-bottom: 1rem;
+
+    @include mobile {
+      font-size: $fz-md;
+    }
   }
   p {
     color: black;
@@ -15,6 +19,9 @@
     font-size: $fz-sm;
     font-weight: 300;
     margin-bottom: 1rem;
+    @include mobile {
+      font-size: $fz-xs;
+    }
   }
 }
 .footerContainer {
@@ -25,16 +32,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .aboutContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 0.8;
-
     .logo {
       margin-right: 2rem;
     }
+
+    @include mobile {
+      flex-direction: column;
+      flex: 1;
+      .logo {
+        margin-right: 0rem;
+      }
+    }
+
     .about {
       h1 {
         color: $red;
@@ -50,6 +69,11 @@
         margin: 0;
         width: 70%;
         line-height: 25px;
+
+        @include mobile {
+          width: 100%;
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -60,6 +84,12 @@
     justify-content: flex-end;
     flex-direction: column;
     flex: 0.2;
+
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
 
     .contact {
       width: 100%;

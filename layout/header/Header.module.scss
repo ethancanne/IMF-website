@@ -9,10 +9,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0px clamp(20px, 5vw, 20vw);
 
   background-attachment: fixed;
   position: relative;
   z-index: 1;
+
+  @include mobile {
+    padding-top: 90px;
+    height: 80vh;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -25,10 +31,8 @@
     z-index: -1;
   }
   .titleContainer {
-    padding: 0 clamp(0px, 10vw, 200px);
-
     .title {
-      font-size: $fz-xl;
+      font-size: clamp($fz-md, 5vw, $fz-xl);
       color: #fff;
       text-align: center;
       margin-bottom: 20px;
@@ -36,7 +40,7 @@
       font-weight: 900;
     }
     .subTitle {
-      font-size: $fz-md;
+      font-size: clamp($fz-xs, 3vw, $fz-md);
       color: #fff;
       text-align: center;
       //   margin-bottom: 20px;
@@ -49,5 +53,10 @@
   &.subPage {
     height: 70vh;
     padding-top: 30px;
+
+    @include mobile {
+      padding-top: 90px;
+      height: 40vh;
+    }
   }
 }
