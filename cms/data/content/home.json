@@ -16,8 +16,8 @@
     }
   ],
   "statistic": {
-    "beforeStatistic": "Before 1970, over 70% of babies and many mothers Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "afterStatistic": "Now, less than 5% Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "beforeStatistic": "**Before 1970, over 70%** of babies and many mothers Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "afterStatistic": "**Now, less than 5%** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   "newsletters": [
     {
