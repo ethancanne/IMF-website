@@ -1,0 +1,36 @@
+{
+  "shortDescription": {
+    "topDescription": "We serve a population of about 50,000 in Bombardopolis, a remote area of Northwest Haiti that is notoriously poor and unsettled.",
+    "bottomDescription": "Our challenges are practical as well as spiritual, yet we endeavor to show the love of God as we meet basic needs of people in Jesus’ name. For 50 years we have been the only consistent source of healthcare in the area."
+  },
+  "cards": [
+    {
+      "title": "Health and medicine",
+      "description": "Provide medical and spiritual care to the more than 50,000 individuals and families of rural northwestern Haiti, including premature and low birth-weight infants and new mothers.",
+      "image": "img/home-card-health.jpeg"
+    },
+    {
+      "description": "Provide medical and spiritual care to the more than 50,000 individuals and families of rural northwestern Haiti, including premature and low birth-weight infants and new mothers.",
+      "title": "Health and medicine",
+      "image": "img/home-header.jpeg"
+    }
+  ],
+  "statistic": {
+    "beforeStatistic": "Before 1970, over 70% of babies and many mothers Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "afterStatistic": "Now, less than 5% Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "newsletters": [
+    {
+      "title": "2022 Newsletter",
+      "link": "https://google.com"
+    },
+    {
+      "title": "2021 Newsletter",
+      "link": "https://google.com"
+    },
+    {
+      "title": "2020 Newsletter",
+      "link": "https://google.com"
+    }
+  ]
+}
