@@ -13,6 +13,11 @@
       "description": "Provide medical and spiritual care to the more than 50,000 individuals and families of rural northwestern Haiti, including premature and low birth-weight infants and new mothers.",
       "title": "Health and medicine",
       "image": "img/home-header.jpeg"
+    },
+    {
+      "title": "Faith & Education",
+      "description": "Forging communities with local pastors to ensure God’s message of hope is heard and available to all and fostering youth education, both classroom and spiritual.",
+      "image": "img/home-card-health.jpeg"
     }
   ],
   "statistic": {
