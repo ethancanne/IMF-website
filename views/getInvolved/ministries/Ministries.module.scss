@@ -1,0 +1,46 @@
+@import '../../../styles/globals.scss';
+.container {
+  padding: $pagePadding;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    text-align: center;
+    color: $red;
+    font-size: $fz-lg;
+
+    @include mobile {
+      font-size: $fz-md;
+    }
+
+    font-weight: 900;
+    span {
+      color: $blue;
+      font-weight: 100;
+    }
+  }
+
+  .ministries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .donate {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .disclaimer {
+    margin-top: 50px;
+    font-size: $fz-xs;
+    color: $red;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 300;
+  }
+}

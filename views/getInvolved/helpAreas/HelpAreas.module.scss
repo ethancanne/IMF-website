@@ -1,2 +1,69 @@
+@import '../../../styles/globals.scss';
 .container {
+  padding: $pagePadding;
+  //   background-color: white;
+  //   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: white;
+  border-top: rgba(0, 0, 0, 0.132) 4px solid;
+  .title {
+    color: $red;
+    font-size: $fz-lg;
+    font-weight: 900;
+
+    // flex-wrap: wrap;
+    @include mobile {
+      text-align: center;
+      flex-direction: column;
+      font-size: $fz-md;
+    }
+    h1 {
+      flex: 0.2;
+
+      @include mobile {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+
+      //   padding: 20px;
+      span {
+        color: $blue;
+        font-weight: 100;
+      }
+    }
+    .descriptionContainer {
+      flex: 0.7;
+      width: 100%;
+      .description {
+        font-size: 40px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.661);
+        margin-top: 20px;
+        @include mobile {
+          text-align: center;
+          font-size: $fz-md;
+        }
+      }
+      .subDescription {
+        font-size: 40px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.796);
+        margin-top: 20px;
+        font-weight: 900;
+        @include mobile {
+          text-align: center;
+          font-size: $fz-md;
+        }
+      }
+    }
+  }
+
+  .missionTeamDescription {
+    text-align: center;
+    font-size: $fz-sm;
+    color: rgb(74, 74, 74);
+    line-height: 50px;
+
+    margin: 90px 20px;
+  }
 }
