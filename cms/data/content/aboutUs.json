@@ -16,7 +16,7 @@
   },
   "mapAndCampus": {
     "map": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Ante in nibh mauris cursus mattis molestie a. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Ac turpis egestas sed tempus urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Adipiscing elit duis tristique sollicitudin nibh sit amet. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Semper risus in hendrerit gravida rutrum quisque. Eget duis at tellus at urna condimentum mattis pellentesque. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.",
+      "description": "This shows our 10-acre property in Bombardopolis, NW Haiti. Our main buildings are the green and cream color buildings. The building in the center area with the solar panels on the roof is the main (original) hospital building that has offices, clinic, waiting rooms, pharmacy, lab, peds ward, women’s ward, men’s ward, some support spaces. Left of the main hospital are clinic, doctor exam rooms, storage, behind that is the newer maternity wing for women’s health and labor and delivery. The building in front of that is a new partially finished operating room facility. The community well that we put in a few years ago is the small green building north of the main hospital building. On the bottom and right side of the picture are some maintenance and support buildings, doctors house, wash room and laundry facilities, staff house and missionary house.",
       "image": "img/campus.jpeg"
     },
     "campus": {
@@ -26,15 +26,27 @@
   },
   "missionaries": [
     {
-      "name": "Steve and Faith Leach",
+      "name": "Tom and Jean Northen",
       "position": "Missionary",
       "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
-      "image": "img/campus.jpeg"
+      "image": "img/imffoundations01b.jpg"
     },
     {
       "name": "Steve and Faith Leach",
       "position": "Missionary",
       "description": "Steve and Faith Leach, who served as IMF’s missionaries for more than 20 years, recently returned home to the States from Bombardopolis. During their tenure they were aided at various times by fellow missionaries most notably Dan and Sharon Beardsley, and Betsy Rennells. Their service and commitment to the Lord and the people of Bombardopolis saw them through many challenges and helped bring about many victories. Steve and Faith also raised their 4 children while serving. We thank the Lord for their faithful service.",
+      "image": "img/home-card-health.jpeg"
+    },
+    {
+      "name": "Matt and Sarah Rideout",
+      "position": "Missionary",
+      "description": "L﻿orem",
+      "image": "img/imffoundations01b.jpg"
+    },
+    {
+      "name": "Russ Beaurivage",
+      "position": "Missionary",
+      "description": "L﻿orem",
       "image": "img/home-card-health.jpeg"
     }
   ],
