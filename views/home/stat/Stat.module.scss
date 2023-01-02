@@ -7,6 +7,9 @@
   text-align: center;
   padding: $pagePadding;
   line-height: 60px;
+  @include mobile {
+    line-height: 30px;
+  }
 
   strong {
     font-weight: 900;
@@ -16,11 +19,20 @@
     color: rgb(88, 88, 88);
     font-weight: 300;
     font-size: $fz-sm;
+    @include mobile {
+      font-size: $fz-xs;
+    }
   }
   .after {
     color: rgb(53, 53, 53);
     font-weight: 400;
     font-size: $fz-md;
-    line-height: 80px;
+    line-height: 60px;
+    @include mobile {
+      font-size: $fz-sm;
+    }
+    @include mobile {
+      line-height: 30px;
+    }
   }
 }

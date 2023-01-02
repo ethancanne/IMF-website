@@ -13,12 +13,21 @@
   height: 3rem;
   padding: 0 2rem;
   transition: all 0.3s ease-in-out;
+  @include mobile {
+    padding: 0 20px 0 10px;
+  }
 
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50%;
+
+    img {
+      @include mobile {
+        width: 150px;
+      }
+    }
 
     h1 {
       display: flex;
@@ -31,6 +40,12 @@
       border-left: rgba(0, 0, 0, 0.223) 2px solid;
       color: $red;
       margin: 0;
+
+      @include mobile {
+        margin-top: 0;
+        margin: 0 5px;
+        padding: 0 10px;
+      }
     }
   }
 
@@ -81,6 +96,12 @@
       box-shadow: none;
       color: $red;
       font-family: 'Metropolis';
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $red !important;
+        color: white !important;
+        cursor: pointer;
+      }
       @include mobile {
         display: none;
       }
@@ -92,6 +113,7 @@
     position: relative;
     color: $red;
     cursor: pointer;
+
     @include mobile {
       display: block;
     }
@@ -102,12 +124,27 @@
     box-shadow: none;
     color: white;
     padding-top: 25px;
+
+    .menu {
+      color: white;
+    }
     .logo {
+      img {
+        @include mobile {
+          width: 150px;
+        }
+      }
+
       h1 {
         color: white;
         border-left: rgba(255, 255, 255, 0.223) 2px solid;
         margin-left: 20px;
         margin-top: 20px;
+        @include mobile {
+          margin-top: 0;
+          margin: 0 5px;
+          padding: 0 10px;
+        }
       }
     }
     .navLinks {

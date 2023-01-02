@@ -11,7 +11,6 @@ const Scripture = (props: Props) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
       }}
     >
       <div className={styles.container}>

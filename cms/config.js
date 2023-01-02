@@ -39,12 +39,39 @@ module.exports = {
                   name: 'description',
                   widget: 'text',
                 },
-                {
-                  label: 'Image',
-                  name: 'image',
-                  widget: 'image',
-                },
               ],
+            },
+          ],
+        },
+        {
+          label: 'About And Contact',
+          name: 'aboutAndContact',
+          file: 'cms/data/websiteLayout/aboutAndContact.json',
+          fields: [
+            {
+              label: 'About Text',
+              name: 'about',
+              widget: 'markdown',
+            },
+            {
+              label: 'Mailing Address',
+              name: 'mailingAddress',
+              widget: 'string',
+            },
+            {
+              label: 'Email',
+              name: 'email',
+              widget: 'string',
+            },
+            {
+              label: 'Facebook Link',
+              name: 'facebookLink',
+              widget: 'string',
+            },
+            {
+              label: 'Donate Link',
+              name: 'donateLink',
+              widget: 'string',
             },
           ],
         },
@@ -56,10 +83,101 @@ module.exports = {
       format: 'json',
       files: [
         {
+          label: 'Home',
+          name: 'home',
+          file: 'cms/data/content/home.json',
+          fields: [
+            {
+              label: 'Banner Image',
+              name: 'bannerImage',
+              widget: 'image',
+            },
+            {
+              label: 'Description Cards Section',
+              name: 'cards',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
+              ],
+            },
+            {
+              label: 'Short Description Section',
+              name: 'shortDescription',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Top Description',
+                  name: 'topDescription',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'Bottom Description',
+                  name: 'bottomDescription',
+                  widget: 'markdown',
+                },
+              ],
+            },
+            {
+              label: 'Statistic Section',
+              name: 'statistic',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Before Statistic',
+                  name: 'beforeStatistic',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'After Statistic',
+                  name: 'afterStatistic',
+                  widget: 'markdown',
+                },
+              ],
+            },
+            {
+              label: 'Newsletter Section',
+              name: 'newsletters',
+              widget: 'list',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'link',
+                  name: 'link',
+                  widget: 'string',
+                },
+              ],
+            },
+          ],
+        },
+        {
           label: 'About Us',
           name: 'aboutUs',
           file: 'cms/data/content/aboutUs.json',
           fields: [
+            {
+              label: 'Banner Image',
+              name: 'bannerImage',
+              widget: 'image',
+            },
             {
               label: 'Intro Section',
               name: 'intro',
@@ -219,91 +337,15 @@ module.exports = {
         },
 
         {
-          label: 'Home',
-          name: 'home',
-          file: 'cms/data/content/home.json',
-          fields: [
-            {
-              label: 'Description Cards Section',
-              name: 'cards',
-              widget: 'list',
-              allow_add: true,
-              fields: [
-                {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                },
-                {
-                  label: 'Description',
-                  name: 'description',
-                  widget: 'markdown',
-                },
-                {
-                  label: 'Image',
-                  name: 'image',
-                  widget: 'image',
-                },
-              ],
-            },
-            {
-              label: 'Short Description Section',
-              name: 'shortDescription',
-              widget: 'object',
-              fields: [
-                {
-                  label: 'Top Description',
-                  name: 'topDescription',
-                  widget: 'markdown',
-                },
-                {
-                  label: 'Bottom Description',
-                  name: 'bottomDescription',
-                  widget: 'markdown',
-                },
-              ],
-            },
-            {
-              label: 'Statistic Section',
-              name: 'statistic',
-              widget: 'object',
-              fields: [
-                {
-                  label: 'Before Statistic',
-                  name: 'beforeStatistic',
-                  widget: 'markdown',
-                },
-                {
-                  label: 'After Statistic',
-                  name: 'afterStatistic',
-                  widget: 'markdown',
-                },
-              ],
-            },
-            {
-              label: 'Newsletter Section',
-              name: 'newsletters',
-              widget: 'list',
-              fields: [
-                {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                },
-                {
-                  label: 'link',
-                  name: 'link',
-                  widget: 'string',
-                },
-              ],
-            },
-          ],
-        },
-        {
           label: 'Causes',
           name: 'causes',
           file: 'cms/data/content/causes.json',
           fields: [
+            {
+              label: 'Banner Image',
+              name: 'bannerImage',
+              widget: 'image',
+            },
             {
               label: 'Top Description',
               name: 'topDescription',

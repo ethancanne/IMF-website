@@ -4,6 +4,7 @@ import Intro from '../views/home/intro/Intro.view';
 import Scripture from '../views/home/scripture/Scripture.view';
 import Stat from '../views/home/stat/Stat.view';
 import Feed from '../views/home/feed/Feed.view';
+import home from '../cms/data/content/home.json';
 type Props = {};
 
 const index = ({}: Props) => {
@@ -12,7 +13,7 @@ const index = ({}: Props) => {
       isSubPage={false}
       title="Together We Can Change The Lives Of The People Of Northwest Haiti"
       subTitle="We are challenged to show the love of God in tangible ways, not in word only. God can use you to change the lives of the Haitian people through His love."
-      image="/img/home-header.jpeg"
+      image={home.bannerImage}
     >
       <Intro />
       <Stat />

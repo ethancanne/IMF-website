@@ -3,6 +3,10 @@
 @import '../../../styles/globals.scss';
 .container {
   padding: $pagePadding;
+  background-color: #ffffff;
+  border-bottom: $red 10px solid;
+  margin-bottom: 100px;
+
   .title {
     font-size: $fz-lg;
     font-weight: 900;
@@ -18,8 +22,12 @@
   }
   .directors {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 30px;
+    justify-content: center;
+    @include mobile {
+      grid-template-columns: auto;
+    }
   }
 
   .staff {

@@ -7,7 +7,9 @@ type Props = {};
 const Intro = (props: Props) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>International Missionary Fellowship</h1>
+      <h1 className={styles.title}>
+        International <span>Missionary</span> Fellowship
+      </h1>
       <h4 className={styles.subTitle}>Haiti Hospital</h4>
       <p className={styles.content}>
         <ReactMarkdown>{aboutUs.intro}</ReactMarkdown>

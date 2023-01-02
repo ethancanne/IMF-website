@@ -1,6 +1,6 @@
 @import '../../styles/globals.scss';
 .container {
-  background-color: rgba(0, 0, 0, 0.661);
+  background-color: rgba(255, 255, 255, 0.661);
   backdrop-filter: blur(10px);
   height: 100%;
   width: 100%;
@@ -20,11 +20,12 @@
     padding: 0;
 
     .menuItem {
-      color: white;
-      font-size: $fz-xl;
+      color: $red;
+      font-weight: 900;
+      font-size: $fz-lg;
       padding: 5px;
       @include mobile {
-        font-size: $fz-lg;
+        font-size: $fz-md;
       }
     }
   }

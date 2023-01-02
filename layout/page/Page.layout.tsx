@@ -44,6 +44,7 @@ const Page = (props: Props) => {
         setMenuIsOpen={setMenuIsOpen}
         menuIsOpen={menuIsOpen}
         isSubtle={isSubtle}
+        setIsSubtle={setIsSubtle}
       />
       <AnimatePresence initial={false} mode="wait">
         {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}

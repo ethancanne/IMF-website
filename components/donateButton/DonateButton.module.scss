@@ -10,10 +10,16 @@
   box-shadow: none;
   color: $red;
   font-family: 'Metropolis';
+  transition: all 0.3s ease;
 
   &.light {
     border: white 3px solid !important;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
+  }
+  &:hover {
+    background-color: $red !important;
+    color: white !important;
+    cursor: pointer;
   }
 }

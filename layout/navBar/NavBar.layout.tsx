@@ -3,13 +3,15 @@ type Props = {
   setMenuIsOpen: any;
   menuIsOpen: any;
   isSubtle: boolean;
+  setIsSubtle: any;
 };
-import { BsGridFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import pages from '../../cms/data/websiteLayout/pages.json';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import aboutAndContact from '../../cms/data/websiteLayout/aboutAndContact.json';
 
 const NavBar = (props: Props) => {
   const router = useRouter();
@@ -40,7 +42,10 @@ const NavBar = (props: Props) => {
               {page.title}
             </Link>
           ))}
-          <button className={styles.donateButton}>Donate</button>
+
+          <button className={styles.donateButton}>
+            <a href={aboutAndContact.donateLink}>Donate</a>
+          </button>
 
           <motion.div
             whileHover={{
@@ -55,10 +60,13 @@ const NavBar = (props: Props) => {
               stiffness: 100,
               damping: 10,
             }}
-            onClick={() => props.setMenuIsOpen(!props.menuIsOpen)}
+            onClick={() => {
+              props.setMenuIsOpen(!props.menuIsOpen);
+              props.setIsSubtle(false);
+            }}
             className={styles.menu}
           >
-            <BsGridFill />
+            {props.menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </motion.div>
         </div>
       </div>

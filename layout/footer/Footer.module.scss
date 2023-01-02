@@ -2,6 +2,10 @@
 .getInvolvedContainer {
   text-align: center;
   padding: 80px;
+  @include mobile {
+    padding: 40px;
+    padding-bottom: 80px;
+  }
   h1 {
     color: $red;
 

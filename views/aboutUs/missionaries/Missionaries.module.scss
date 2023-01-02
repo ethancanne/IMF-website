@@ -1,6 +1,9 @@
 @import '../../../styles/globals.scss';
 .container {
   padding: $pagePadding;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
   .title {
     font-size: $fz-lg;
     font-weight: 900;

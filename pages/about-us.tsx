@@ -7,12 +7,12 @@ import MapCampus from '../views/aboutUs/mapCampus/MapCampus.view';
 import Missionaries from '../views/aboutUs/missionaries/Missionaries.view';
 import BoardOfDirectors from '../views/aboutUs/boardOfDirectors/BoardOfDirectors.view';
 import EnabledToDo from '../views/aboutUs/enabledToDo/EnabledToDo.view';
-import pages from '../cms/data/websiteLayout/pages.json';
+import aboutUs from '../cms/data/content/aboutUs.json';
 type Props = {};
 
 const AboutUs = ({}: Props) => {
   return (
-    <Page isSubPage={true} title="About Us" image="/img/about-us-header.jpeg">
+    <Page isSubPage={true} title="About Us" image={aboutUs.bannerImage}>
       <Intro />
       <History />
       <MapCampus />

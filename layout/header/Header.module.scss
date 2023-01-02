@@ -17,6 +17,8 @@
 
   @include mobile {
     padding-top: 90px;
+    background-attachment: unset;
+
     height: 80vh;
   }
   &::before {
