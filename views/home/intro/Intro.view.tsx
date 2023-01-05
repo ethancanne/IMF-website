@@ -9,11 +9,13 @@ const Intro = (props: Props) => {
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           {home.cards.map((card) => (
-            <Card
-              title={card.title}
-              description={card.description}
-              image={card.image}
-            />
+            <div className={styles.card}>
+              <Card
+                title={card.title}
+                description={card.description}
+                image={card.image}
+              />
+            </div>
           ))}
         </div>
 

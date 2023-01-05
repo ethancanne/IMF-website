@@ -1,7 +1,8 @@
 module.exports = {
   cms_manual_init: true,
   backend: {
-    name: 'git-gateway',
+    name: 'github',
+    repo: 'ethancanne/IMF-Website',
     branch: 'main',
   },
   media_folder: 'public/img',
@@ -365,6 +366,101 @@ module.exports = {
                   label: 'Description',
                   name: 'description',
                   widget: 'markdown',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Get Involved',
+          name: 'getInvolved',
+          file: 'cms/data/content/getInvolved.json',
+          fields: [
+            {
+              label: 'Banner Image',
+              name: 'bannerImage',
+              widget: 'image',
+            },
+
+            {
+              label: 'Missions',
+              name: 'missions',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
+                {
+                  label: 'Budget',
+                  name: 'budget',
+                  widget: 'number',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+              ],
+            },
+
+            {
+              label: 'Disclaimer',
+              name: 'disclaimer',
+              widget: 'markdown',
+            },
+            {
+              label: 'Help Areas Description',
+              name: 'helpAreasDescription',
+              widget: 'markdown',
+            },
+
+            {
+              label: 'Help Areas',
+              name: 'helpAreas',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Icon',
+                  name: 'icon',
+                  widget: 'image',
+                },
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+              ],
+            },
+
+            {
+              label: 'Mission Team Visits Images',
+              name: 'missionTeamVisitsImages',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                },
+                {
+                  label: 'Alt Text',
+                  name: 'altText',
+                  widget: 'string',
                 },
               ],
             },

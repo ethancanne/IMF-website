@@ -5,7 +5,7 @@ type Props = {
   image: string;
   name: string;
   description: string;
-  budget: string;
+  budget: Number;
 };
 
 const MinistryItem = (props: Props) => {
@@ -13,7 +13,7 @@ const MinistryItem = (props: Props) => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         <Image
-          src={props.image}
+          src={'/' + props.image}
           className={styles.image}
           width={300}
           height={200}
@@ -32,7 +32,7 @@ const MinistryItem = (props: Props) => {
           <div></div>
         </div>
 
-        <p className={styles.budget}>{props.budget}</p>
+        <p className={styles.budget}>${props.budget.toLocaleString()}</p>
         <p className={styles.description}>{props.description}</p>
       </div>
     </div>

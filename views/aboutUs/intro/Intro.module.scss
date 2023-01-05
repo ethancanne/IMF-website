@@ -9,7 +9,7 @@
   padding: $pagePadding;
   padding-top: 80px;
   text-align: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: rgba(0, 0, 0, 0.132) 4px solid;
 
   .title {
     font-size: $fz-lg;
@@ -24,13 +24,13 @@
     }
   }
   .subTitle {
-    font-size: $fz-sm;
-    font-weight: 600;
+    font-size: $fz-md;
+    font-weight: 200;
     color: $blue;
     margin-bottom: 10px;
 
     @include mobile {
-      font-size: $fz-xs;
+      font-size: $fz-sm;
     }
   }
   .content {

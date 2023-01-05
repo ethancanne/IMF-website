@@ -1,4 +1,6 @@
 import styles from './HelpAreas.module.scss';
+import Card from '../../../components/card/Card.component';
+import getInvolved from '../../../cms/data/content/getInvolved.json';
 
 type Props = {};
 
@@ -21,14 +23,19 @@ const HelpAreas = (props: Props) => {
         </div>
       </div>
 
-      <hr />
       <p className={styles.missionTeamDescription}>
-        IMF welcomes organized mission teams that want to come and serve area
-        needs. It is our intention to use local workers for most of our needs;
-        this helps the local economy and gives the locals much needed resources.
-        The campus at Bombardopolis can use help from mission teams in three
-        areas. Dentistry/Eye Care/ Specific Trades.
+        {getInvolved.helpAreasDescription}
       </p>
+
+      <div className={styles.helpAreaCards}>
+        {getInvolved.helpAreas.map((helpArea) => (
+          <Card
+            title={helpArea.title}
+            description={helpArea.description}
+            image={helpArea.icon}
+          />
+        ))}
+      </div>
     </div>
   );
 };

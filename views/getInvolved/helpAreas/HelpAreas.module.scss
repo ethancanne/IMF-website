@@ -12,9 +12,8 @@
 
     // flex-wrap: wrap;
     @include mobile {
-      text-align: center;
-      flex-direction: column;
       font-size: $fz-md;
+      text-align: center;
     }
     h1 {
       flex: 0.2;
@@ -32,38 +31,53 @@
       }
     }
     .descriptionContainer {
-      flex: 0.7;
       width: 100%;
       .description {
-        font-size: 40px;
-        font-weight: 300;
+        font-weight: 900;
+
         color: rgba(0, 0, 0, 0.661);
-        margin-top: 20px;
+        font-size: $fz-md;
         @include mobile {
           text-align: center;
-          font-size: $fz-md;
+          font-size: $fz-sm;
         }
       }
       .subDescription {
-        font-size: 40px;
         font-weight: 300;
         color: rgba(0, 0, 0, 0.796);
         margin-top: 20px;
-        font-weight: 900;
+        font-weight: 300;
+
+        font-size: $fz-md;
+
         @include mobile {
           text-align: center;
-          font-size: $fz-md;
+          font-size: $fz-sm;
         }
       }
     }
   }
 
   .missionTeamDescription {
-    text-align: center;
-    font-size: $fz-sm;
+    border-top: whitesmoke 1px solid;
+    padding-top: 50px;
+    margin-top: 50px;
+
+    font-size: $fz-xs;
     color: rgb(74, 74, 74);
     line-height: 50px;
 
-    margin: 90px 20px;
+    @include mobile {
+      text-align: center;
+
+      font-size: $fz-xxs;
+    }
+  }
+
+  .helpAreaCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
   }
 }
