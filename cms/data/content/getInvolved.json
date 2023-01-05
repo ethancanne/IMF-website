@@ -1,0 +1,64 @@
+{
+  "disclaimer": "Whether you give by card or check, your dollars make a difference to the lives of those in Bombardopolis. Please make checks out to International Missionary Fellowship and mail to PO Box 5226, Largo, FL 33779-5226",
+  "missions": [
+    {
+      "title": "Hospital",
+      "image": "img/campus.jpeg",
+      "budget": 210000,
+      "description": "To enable us to continue the mission of providing birth care, illness treatment, wellness consultations, vaccinations, and more."
+    },
+    {
+      "title": "Widow's Home",
+      "budget": 4800,
+      "description": "to provide care and housing for widows in the community, who otherwise struggle without a support network.",
+      "image": "img/img_1266.jpg"
+    },
+    {
+      "title": "Cisterns",
+      "image": "img/img_1319.jpg",
+      "description": "to supply clean, potable water to an entire community – a fulfilment of a common metaphor of Jesus for physical and spiritual nourishment",
+      "budget": 12000
+    },
+    {
+      "title": "Tree Ministry",
+      "image": "img/home-header.jpeg",
+      "budget": 2000,
+      "description": "To cultivate healthy, fruit-bearing orchards and a culture of self-sufficience through agricultural sustainability."
+    },
+    {
+      "title": "Faith & Education",
+      "budget": 2000,
+      "image": "img/img_1218.jpg",
+      "description": "To develop the minds of young and old and foster their spiritual well being in a safe, loving environment."
+    }
+  ],
+  "bannerImage": "img/img_1319.jpg",
+  "helpAreasDescription": "IMF welcomes organized mission teams that want to come and serve area needs. It is our intention to use local workers for most of our needs; this helps the local economy and gives the locals much needed resources. The campus at Bombardopolis can use help from mission teams in three areas. Dentistry/Eye Care/ Specific Trades.",
+  "helpAreas": [
+    {
+      "title": "Dentistry",
+      "description": "The Bombardopolis area does not have any educated form of dentistry.  Most folks either go to the nearest large city (Gonaives – 6hr bus ride) for their teeth care or just hire a local tooth puller to help with the pain.  Dentistry mission teams will be able to use the onsite operating room for exams and any procedures, but would need to bring their own equipment.",
+      "icon": "https://haitihospital.org/wp-content/uploads/2018/11/tooth-outline-1.png?6bfec1&6bfec1"
+    },
+    {
+      "title": "Eye Care",
+      "description": "This area does not have any specific eye care except for minor injuries and infections that can be treated by the medical staff.   Eye exams and eye glass fittings require another trip to Gonaives.  Mission teams can help greatly with this need and can be trained to give vision exams and fit patients with prescription glasses.  Teams typically will supply and bring all needed supplies.",
+      "icon": "https://haitihospital.org/wp-content/uploads/2018/11/eye-open.png?6bfec1&6bfec1"
+    },
+    {
+      "description": "Locals are utilized for the basic trade needs for the hospital, but there are few electricians and auto mechanics.  As we continue to build, the demands on the on-site electrical grid continue to grow.  The rough roads (and the need for our vehicles to be ready at a moment’s notice) mean on going maintenance and replacement of wearing parts for necessary transportation.",
+      "title": "Specialized Trades",
+      "icon": "https://haitihospital.org/wp-content/uploads/2018/11/improvement.png?6bfec1&6bfec1"
+    }
+  ],
+  "missionTeamVisitsImages": [
+    {
+      "image": "img/img_1218.jpg",
+      "altText": "Test"
+    },
+    {
+      "image": "img/img_1275.jpg",
+      "altText": "test"
+    }
+  ]
+}
