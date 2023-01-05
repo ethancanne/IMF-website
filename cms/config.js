@@ -1,8 +1,7 @@
 module.exports = {
   cms_manual_init: true,
   backend: {
-    name: 'github',
-    repo: 'ethancanne/IMF-Website',
+    name: 'git-gateway',
     branch: 'main',
   },
   media_folder: 'public/img',
