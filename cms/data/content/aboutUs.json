@@ -52,19 +52,44 @@
   ],
   "boardOfDirectors": [
     {
-      "name": "John Doe",
-      "position": "Missionary",
+      "name": "Joseph (Bo) Lundy",
+      "position": "President",
       "image": "img/home-card-health.jpeg"
     },
     {
-      "name": "John Doe",
-      "position": "Missionary",
+      "name": "Paul Northen",
+      "position": "Vice President",
       "image": "img/home-card-health.jpeg"
     },
     {
-      "name": "John Doe",
-      "position": "Missionary",
-      "image": "img/campus.jpeg"
+      "name": "Open Position",
+      "position": "Treasurer",
+      "image": "img/openposition.jpeg"
+    },
+    {
+      "name": "Open Position",
+      "position": "Secretary",
+      "image": "img/openposition.jpeg"
+    },
+    {
+      "name": "Chris Daly",
+      "position": "Board Member",
+      "image": "img/placeholder.jpeg"
+    },
+    {
+      "name": "Jake VanWingerden",
+      "position": "Board Member",
+      "image": "img/placeholder.jpeg"
+    },
+    {
+      "name": "Zachary Northen",
+      "position": "Board Member",
+      "image": "img/placeholder.jpeg"
+    },
+    {
+      "name": "Skip Beach",
+      "position": "Board Member",
+      "image": "img/placeholder.jpeg"
     }
   ],
   "haitianStaff": {
