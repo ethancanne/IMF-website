@@ -32,8 +32,8 @@ const MapCampus = (props: Props) => {
         <Image
           src={'/' + aboutUs.mapAndCampus.campus.image}
           alt="Map of Hospital Evangelique Bombardopolis"
-          width={800}
-          height={800}
+          width={400}
+          height={400}
           className={styles.image}
         />
       </div>
