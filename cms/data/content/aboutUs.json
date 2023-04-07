@@ -4,13 +4,13 @@
     "description": "IMF had its beginnings in the 1970’s in Jamaica where Tom Northen our founder had an established missionary effort underway. After a providential trip to northwest Haiti and Bombardoplis the mission migrated to that region and has been there ever since. The Lord has grown the hospital from its simple beginnings to a well run hospital providing continuous quality health care to the people in the region and we are continuing to grow. HEB has recently been cited and recognized by the Haitian Health Department as the best run mixed institution in the northwest region and Haiti. Not only is HEB providing top notch health care it is also one of the largest employers in the area. With the exception of the director, all positions are staffed by Haitians, from the doctors to the guards.",
     "images": [
       {
-        "image": "img/campus.jpeg"
+        "image": "img/history1.jpg"
       },
       {
-        "image": "img/campus.jpeg"
+        "image": "img/history2.jpg"
       },
       {
-        "image": "img/home-card-health.jpeg"
+        "image": "img/history3.jpg"
       }
     ]
   },
@@ -20,8 +20,8 @@
       "image": "img/campus.jpeg"
     },
     "campus": {
-      "description": "T﻿his ministry was founded by three men in Jamaica in the late 1960's, by Tom Northen, David Ho and Dick Bell.",
-      "image": "img/home-card-health.jpeg"
+      "description": "This picture shows the Hospital Evangelique Bombardopolis (HEB) in Haiti. The hospital was established by the International Missionary Fellowship and serves as the main focus of their ministry. The hospital provides top-notch healthcare services to the people in the region, including medical care, surgeries, and emergency treatment. As a mixed institution, HEB also provides mental health services, rehabilitation, and a maternity ward. The hospital is staffed by a dedicated team of Haitians who work tirelessly to ensure that patients receive the best care possible. This picture is a testament to the hard work and dedication of the International Missionary Fellowship and the people of Haiti who continue to benefit from their services.",
+      "image": "img/hospital.jpg"
     }
   },
   "missionaries": [
