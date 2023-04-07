@@ -53,12 +53,44 @@
   ],
   "missionTeamVisitsImages": [
     {
-      "image": "img/img_1218.jpg",
-      "altText": "Test"
+      "image": "img/eyedoctors.jpeg",
+      "altText": "Eye Doctors"
     },
     {
-      "image": "img/img_1275.jpg",
-      "altText": "test"
+      "image": "img/plane.jpg",
+      "altText": "Plane"
+    },
+    {
+      "image": "img/church.jpg",
+      "altText": "Church"
+    },
+    {
+      "image": "img/russwidow.jpg",
+      "altText": "Russ"
+    },
+    {
+      "image": "img/meeting.jpg",
+      "altText": "Meeting"
+    },
+    {
+      "image": "img/teaching.jpg",
+      "altText": "Teaching"
+    },
+    {
+      "image": "img/team.jpg",
+      "altText": "Group"
+    },
+    {
+      "image": "img/tisierpaul.jpg",
+      "altText": "Paul"
+    },
+    {
+      "image": "img/teamprayer.jpg",
+      "altText": "Prayer"
+    },
+    {
+      "image": "img/teamprayer2.jpg",
+      "altText": "Prayer"
     }
   ]
 }
