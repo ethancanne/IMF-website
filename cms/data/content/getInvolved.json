@@ -11,28 +11,28 @@
       "title": "Widow's Home",
       "budget": 4800,
       "description": "to provide care and housing for widows in the community, who otherwise struggle without a support network.",
-      "image": "img/img_1266.jpg"
+      "image": "img/widowshome.jpeg"
     },
     {
       "title": "Cisterns",
-      "image": "img/img_1319.jpg",
+      "image": "img/cistern.jpg",
       "description": "to supply clean, potable water to an entire community – a fulfilment of a common metaphor of Jesus for physical and spiritual nourishment",
       "budget": 12000
     },
     {
       "title": "Tree Ministry",
-      "image": "img/home-header.jpeg",
+      "image": "img/treeministry.jpg",
       "budget": 2000,
       "description": "To cultivate healthy, fruit-bearing orchards and a culture of self-sufficience through agricultural sustainability."
     },
     {
       "title": "Faith & Education",
       "budget": 2000,
-      "image": "img/img_1218.jpg",
+      "image": "img/img_1266.jpg",
       "description": "To develop the minds of young and old and foster their spiritual well being in a safe, loving environment."
     }
   ],
-  "bannerImage": "img/img_1319.jpg",
+  "bannerImage": "img/img_1266.jpg",
   "helpAreasDescription": "IMF welcomes organized mission teams that want to come and serve area needs. It is our intention to use local workers for most of our needs; this helps the local economy and gives the locals much needed resources. The campus at Bombardopolis can use help from mission teams in three areas. Dentistry/Eye Care/ Specific Trades.",
   "helpAreas": [
     {
