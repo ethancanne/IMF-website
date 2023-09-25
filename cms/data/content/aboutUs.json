@@ -62,9 +62,19 @@
       "image": "img/placeholder.jpeg"
     },
     {
-      "name": "Open Position",
-      "position": "Treasurer",
-      "image": "img/openposition.jpeg"
+      "name": "Chris Daly",
+      "position": "Board Member",
+      "image": "img/chris-daly.jpg"
+    },
+    {
+      "name": "Jake VanWingerden",
+      "position": "Board Member",
+      "image": "img/jake-wendy-vanwingerden.jpg"
+    },
+    {
+      "name": "Zachary Northen",
+      "position": "Board Member",
+      "image": "img/placeholder.jpeg"
     },
     {
       "name": "Open Position",
@@ -72,19 +82,9 @@
       "image": "img/openposition.jpeg"
     },
     {
-      "name": "Chris Daly",
-      "position": "Board Member",
-      "image": "img/placeholder.jpeg"
-    },
-    {
-      "name": "Jake VanWingerden",
-      "position": "Board Member",
-      "image": "img/placeholder.jpeg"
-    },
-    {
-      "name": "Zachary Northen",
-      "position": "Board Member",
-      "image": "img/placeholder.jpeg"
+      "name": "Open Position",
+      "position": "Treasurer",
+      "image": "img/openposition.jpeg"
     },
     {
       "name": "Skip Beach",
