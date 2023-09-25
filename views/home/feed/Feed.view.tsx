@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Feed.module.scss';
 import FeedItem from './components/feedItem/FeedItem.component';
 import home from '../../../cms/data/content/home.json';
+import Video from '../../../components/video/Video.component';
 
 type Props = {};
 
@@ -30,17 +31,7 @@ const Feed = (props: Props) => {
         />
       </div> */}
 
-      <div className={styles.iframeContainer}>
-        <iframe
-          width="780"
-          className={styles.iframe}
-          height="439"
-          src="https://www.youtube.com/embed/HVfINeQyhvk"
-          title="International Missionary Fellowship - Haiti Hospital, Bombardopolis"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
+      <Video url="https://www.youtube.com/embed/HVfINeQyhvk" />
 
       <div className={styles.newsletterDropdownContainer}>
         <h1 className={styles.newsletterDropdownTitle}>

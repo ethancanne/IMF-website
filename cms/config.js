@@ -1,5 +1,5 @@
 module.exports = {
-  cms_manual_init: true,
+  // cms_manual_init: true,
   backend: {
     name: 'git-gateway',
     branch: 'main',
@@ -459,6 +459,25 @@ module.exports = {
                 {
                   label: 'Alt Text',
                   name: 'altText',
+                  widget: 'string',
+                },
+              ],
+            },
+
+            {
+              label: 'Mission Trip Videos',
+              name: 'missionTripVideos',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Video URL',
+                  name: 'url',
+                  widget: 'string',
+                },
+                {
+                  label: 'Video Title',
+                  name: 'title',
                   widget: 'string',
                 },
               ],

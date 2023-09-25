@@ -2,6 +2,7 @@ import styles from './MissionTeamVisits.module.scss';
 import Image from 'next/image';
 import { m } from 'framer-motion';
 import getInvolved from '../../../cms/data/content/getInvolved.json';
+import Video from '../../../components/video/Video.component';
 
 type Props = {};
 
