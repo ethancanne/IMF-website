@@ -16,7 +16,7 @@ const MissionTeamVisits = (props: Props) => {
             <Image
               src={'/' + i.image}
               alt={i.altText}
-              width={250}
+              width={350}
               height={250}
               className={styles.image}
               style={{ objectFit: 'cover' }}

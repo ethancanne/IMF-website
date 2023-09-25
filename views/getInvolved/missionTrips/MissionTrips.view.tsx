@@ -8,7 +8,10 @@ const MissionTrips = (props: Props) => {
   return (
     <div className={styles.container}>
       {getInvolved.missionTripVideos.map((video) => (
-        <Video url={video.videoUrl} />
+        <div className={styles.video}>
+          <h1 className={styles.title}>{video.title}</h1>
+          <Video url={video.url} />
+        </div>
       ))}
     </div>
   );

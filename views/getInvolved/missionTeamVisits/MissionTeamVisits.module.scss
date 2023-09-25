@@ -1,18 +1,22 @@
 @import '../../../styles/globals.scss';
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
 
   //   overflow: hidden;
+  border-top: rgba(0, 0, 0, 0.132) 4px solid;
+
   .title {
     color: $red;
-    font-size: $fz-lg;
-    padding: 30px;
+    font-size: $fz-xl;
+    // padding: 30px;
+    // text-align: center;
+    padding: 50px clamp(10vw, 5vw, 20vw) 10px clamp(10vw, 5vw, 20vw);
 
     @include mobile {
-      font-size: $fz-md;
+      font-size: $fz-lg;
     }
   }
   .imageContainer {
