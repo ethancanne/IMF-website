@@ -63,28 +63,18 @@
     },
     {
       "name": "Chris Daly",
-      "position": "Board Member",
+      "position": "Treasurer",
       "image": "img/chris-daly.jpg"
     },
     {
       "name": "Jake VanWingerden",
-      "position": "Board Member",
+      "position": "Secretary",
       "image": "img/jake-wendy-vanwingerden.jpg"
     },
     {
       "name": "Zachary Northen",
       "position": "Board Member",
       "image": "img/placeholder.jpeg"
-    },
-    {
-      "name": "Open Position",
-      "position": "Secretary",
-      "image": "img/openposition.jpeg"
-    },
-    {
-      "name": "Open Position",
-      "position": "Treasurer",
-      "image": "img/openposition.jpeg"
     },
     {
       "name": "Skip Beach",
