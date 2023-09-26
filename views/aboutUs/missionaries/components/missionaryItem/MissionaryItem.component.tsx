@@ -24,10 +24,10 @@ const MissionaryItem = (props: Props) => {
         alt={props.name}
         className={styles.image}
         width={300}
-        height={300}
+        height={350}
         style={{
           objectFit: 'cover', //make it responsive
-          objectPosition: 'center',
+          objectPosition: 'top',
           // width: '100%',
         }}
       />

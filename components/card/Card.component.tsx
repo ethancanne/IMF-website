@@ -17,7 +17,7 @@ const Card = (props: Props) => {
           src={'/' + props.image}
           alt={props.title}
           width={300}
-          height={200}
+          height={400}
           style={{
             objectFit: 'cover', //make it responsive
             objectPosition: 'center',
