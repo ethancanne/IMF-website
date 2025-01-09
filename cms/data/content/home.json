@@ -26,12 +26,12 @@
   },
   "newsletters": [
     {
-      "title": "July 2022 Newsletter",
-      "link": "https://docs.google.com/document/d/1woOENYFFe6C5-vc7k4qNgZGzkl052mvs/edit?usp=share_link&ouid=102098643429954697103&rtpof=true&sd=true"
-    },
-    {
       "title": "4th Quarter 2024 Newsletter",
       "link": "https://drive.google.com/file/d/1t5l-Og_CyfMjenu8_CkYp1B4en6M4Udn/view?usp=sharing"
+    },
+    {
+      "title": "July 2022 Newsletter",
+      "link": "https://docs.google.com/document/d/1woOENYFFe6C5-vc7k4qNgZGzkl052mvs/edit?usp=share_link&ouid=102098643429954697103&rtpof=true&sd=true"
     }
   ],
   "bannerImage": "img/home-header.jpeg"
