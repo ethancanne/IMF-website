@@ -7,6 +7,7 @@ type Props = {
   image?: string;
   icon?: React.FC;
   red?: boolean;
+  cover?: boolean;
 };
 
 const Card = (props: Props) => {
@@ -19,9 +20,9 @@ const Card = (props: Props) => {
           width={300}
           height={400}
           style={{
-            objectFit: 'cover', //make it responsive
+            objectFit: props.cover ? 'cover' : 'contain', //make it responsive
             objectPosition: 'center',
-            width: '100%',
+            width: props.cover ? '100%' : '50%',
           }}
         />
       )}

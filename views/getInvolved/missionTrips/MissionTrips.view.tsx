@@ -8,9 +8,9 @@ const MissionTrips = (props: Props) => {
   return (
     <div className={styles.container}>
       {getInvolved.missionTripVideos.map((video) => (
-        <div className={styles.video}>
+        <div className={styles.video} key={video.title}>
           <h1 className={styles.title}>{video.title}</h1>
-          <Video url={video.url} />
+          <Video url={video.url} iframe={false} />
         </div>
       ))}
     </div>

@@ -10,7 +10,7 @@ const EnabledToDo = (props: Props) => {
       <h1 className={styles.title}>What the Lord has enabled us to do</h1>
       <div className={styles.enabledItems}>
         {aboutUs.enabledToDo.map((enabled) => (
-          <Card title={enabled.description} />
+          <Card title={enabled.description} cover key={enabled.description} />
         ))}
       </div>
     </div>

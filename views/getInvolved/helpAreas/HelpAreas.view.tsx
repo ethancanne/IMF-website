@@ -33,6 +33,7 @@ const HelpAreas = (props: Props) => {
             title={helpArea.title}
             description={helpArea.description}
             image={helpArea.icon}
+            key={helpArea.title}
           />
         ))}
       </div>

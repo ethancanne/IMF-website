@@ -12,7 +12,9 @@ const BoardOfDirectors = (props: Props) => {
       <div className={styles.directors}>
         {aboutUs.boardOfDirectors.map((director) => (
           <Card
+            key={director.name}
             title={director.name}
+            cover={true}
             description={director.position}
             image={director.image}
           />

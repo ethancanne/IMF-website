@@ -31,7 +31,7 @@ const Feed = (props: Props) => {
         />
       </div> */}
 
-      <Video url="https://www.youtube.com/embed/HVfINeQyhvk" />
+      <Video url="https://www.youtube.com/embed/HVfINeQyhvk" iframe />
 
       <div className={styles.newsletterDropdownContainer}>
         <h1 className={styles.newsletterDropdownTitle}>
@@ -44,7 +44,9 @@ const Feed = (props: Props) => {
             onChange={onNewsletterChange}
           >
             {home.newsletters.map((newsletter) => (
-              <option value={newsletter.link}>{newsletter.title}</option>
+              <option value={newsletter.link} key={newsletter.link}>
+                {newsletter.title}
+              </option>
             ))}
           </select>
           <button className={styles.button} onClick={onNewsletterSubmit}>
