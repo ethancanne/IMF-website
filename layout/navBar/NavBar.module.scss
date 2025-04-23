@@ -13,6 +13,10 @@
   height: 3rem;
   padding: 0 2rem;
   transition: all 0.3s ease-in-out;
+  max-width: 3000px;
+  left: 50%;
+  transform: translateX(-50%);
+
   @include mobile {
     padding: 0 20px 0 10px;
   }
@@ -82,28 +86,6 @@
           bottom: 0;
         }
         // border-bottom: $red 2px solid;
-      }
-    }
-
-    .donateButton {
-      border: none;
-      border: $red 1px solid;
-      padding: 0.5rem 1rem;
-      border-radius: 30px;
-      font-size: $fz-xxs;
-      font-weight: 900;
-      background-color: white;
-      box-shadow: none;
-      color: $red;
-      font-family: 'Metropolis';
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        background-color: $red !important;
-        color: white !important;
-        cursor: pointer;
-      }
-      @include mobile {
-        display: none;
       }
     }
   }

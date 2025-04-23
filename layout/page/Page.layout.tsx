@@ -27,38 +27,40 @@ const Page = (props: Props) => {
   }, []);
 
   return (
-    <motion.div
-      className={styles.pageContainer}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0,
-        type: 'spring',
-        stiffness: 100,
-      }}
-    >
-      <Head>
-        <title>IMF - Haiti Hospital</title>
-      </Head>
-      <NavBar
-        setMenuIsOpen={setMenuIsOpen}
-        menuIsOpen={menuIsOpen}
-        isSubtle={isSubtle}
-        setIsSubtle={setIsSubtle}
-      />
-      <AnimatePresence initial={false} mode="wait">
-        {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}
-      </AnimatePresence>
-      <Header
-        title={props.title}
-        subTitle={props.subTitle}
-        donate={!props.isSubPage}
-        isSubPage={props.isSubPage}
-        image={props.image}
-      />
-      {props.children}
-      <Footer />{' '}
-    </motion.div>
+    <div className={styles.pageWrapper}>
+      <motion.div
+        className={styles.pageContainer}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0,
+          type: 'spring',
+          stiffness: 100,
+        }}
+      >
+        <Head>
+          <title>IMF - Haiti Hospital</title>
+        </Head>
+        <NavBar
+          setMenuIsOpen={setMenuIsOpen}
+          menuIsOpen={menuIsOpen}
+          isSubtle={isSubtle}
+          setIsSubtle={setIsSubtle}
+        />
+        <AnimatePresence initial={false} mode="wait">
+          {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}
+        </AnimatePresence>
+        <Header
+          title={props.title}
+          subTitle={props.subTitle}
+          donate={!props.isSubPage}
+          isSubPage={props.isSubPage}
+          image={props.image}
+        />
+        {props.children}
+        <Footer />{' '}
+      </motion.div>
+    </div>
   );
 };
 

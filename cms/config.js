@@ -1,8 +1,11 @@
 module.exports = {
-  // cms_manual_init: true,
+  cms_manual_init: true,
   backend: {
-    name: 'git-gateway',
+    name: 'github',
+    repo: 'ethancanne/IMF-website',
     branch: 'main',
+    // name: 'git-gateway',
+    // branch: 'main',
   },
   media_folder: 'public/img',
   public_folder: 'img',
@@ -21,7 +24,7 @@ module.exports = {
               label: 'Pages',
               name: 'pages',
               widget: 'list',
-              allow_add: false,
+              allow_add: true,
               fields: [
                 {
                   label: 'Title',
@@ -32,11 +35,6 @@ module.exports = {
                   label: 'Link',
                   name: 'link',
                   widget: 'string',
-                },
-                {
-                  label: 'Description',
-                  name: 'description',
-                  widget: 'text',
                 },
               ],
             },
@@ -65,11 +63,6 @@ module.exports = {
             {
               label: 'Facebook Link',
               name: 'facebookLink',
-              widget: 'string',
-            },
-            {
-              label: 'Donate Link',
-              name: 'donateLink',
               widget: 'string',
             },
           ],
@@ -481,6 +474,24 @@ module.exports = {
                   widget: 'string',
                 },
               ],
+            },
+          ],
+        },
+
+        {
+          label: 'Donate',
+          name: 'donate',
+          file: 'cms/data/content/donate.json',
+          fields: [
+            {
+              label: 'Banner Image',
+              name: 'bannerImage',
+              widget: 'image',
+            },
+            {
+              label: 'Description',
+              name: 'description',
+              widget: 'markdown',
             },
           ],
         },

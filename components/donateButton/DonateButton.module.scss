@@ -22,4 +22,10 @@
     color: white !important;
     cursor: pointer;
   }
+  &.small {
+    font-size: $fz-xxs;
+    padding: 0.4rem 1.2rem;
+    border: $red 2px solid;
+    border-radius: 40px;
+  }
 }
