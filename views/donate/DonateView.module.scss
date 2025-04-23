@@ -5,14 +5,15 @@
   margin: 0 auto;
   font-family: 'Metropolis';
   color: black;
-  h1 {
-    font-size: 2rem;
+  .title {
+    font-size: $fz-lg;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
 
-  p {
-    font-size: 1rem;
-    // text-align: center;
+  .subTitle {
+    font-size: $fz-sm;
+    text-align: center;
     margin-bottom: 2rem;
   }
 }
@@ -31,22 +32,21 @@
   background: $red;
   border-radius: 12px;
   border: 5px solid white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
 
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   color: white;
 
   h2 {
-    font-size: 1.25rem;
+    font-size: $fz-sm;
     margin-bottom: 0.75rem;
   }
-
-  ul {
-    padding-left: 1.25rem;
-    margin-bottom: 1rem;
-    li {
-      margin-bottom: 0.5rem;
-    }
+  .markdown {
+    font-size: $fz-xs;
   }
 
   a {
@@ -59,15 +59,11 @@
     background-color: white;
     padding: 0.5rem 2rem;
     border-radius: 30px;
+    text-align: center;
+    font-size: $fz-xs;
 
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  address {
-    font-style: normal;
-    line-height: 1.5;
-    margin-bottom: 1rem;
   }
 }

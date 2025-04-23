@@ -515,6 +515,12 @@ module.exports = {
                   widget: 'markdown',
                 },
                 {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
+                  required: false,
+                },
+                {
                   label: 'Link',
                   name: 'link',
                   widget: 'string',
