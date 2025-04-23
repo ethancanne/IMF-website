@@ -1,4 +1,25 @@
 {
   "bannerImage": "img/treeministry.jpg",
-  "description": "G﻿ive her"
+  "description": "Thank you for your generosity! We offer several options to make giving easy and meaningful. Choose the one that fits your preference.",
+  "header": "Give in the Way That Works Best for You",
+  "givingOptions": [
+    {
+      "title": "Donorbox (Online Giving)",
+      "description": "* Credit or Debit Card\n* Apple Pay, Amazon Pay, Cash App\n* Direct Bank Transfer\n\nYou can choose to cover the processing fee if you'd like.",
+      "link": "https://donorbox.org/your-campaign"
+    },
+    {
+      "title": "Zelle (No Fees!)",
+      "description": "Send donations directly from your bank—fast and fee-free.\n\n* Setup recurring transfers on your own schedule\n* No processing fees\n\n**Zelle to:** give@yourdomain.org\n\n*Please note in memo: “Donation”*"
+    },
+    {
+      "title": "By Check",
+      "description": "Mail your gift to:\n\nP.O. Box 32, Odessa, DE 19730-0032\n\nMake checks payable to: **International Missionary Fellowship**"
+    },
+    {
+      "title": "PayPal",
+      "description": "Donate via credit card or linked bank account.\n\n*Note: PayPal deducts a small processing fee from your donation.*",
+      "link": "https://paypal.me/yourlink"
+    }
+  ]
 }
