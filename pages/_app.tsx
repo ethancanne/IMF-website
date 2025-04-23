@@ -28,7 +28,8 @@ const IMFWebsite = (props: Props) => {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
         <meta
           property="og:description"
