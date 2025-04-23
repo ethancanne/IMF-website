@@ -1,0 +1,73 @@
+@import '../../styles/globals.scss';
+.waysToGive {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Metropolis';
+  color: black;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    // text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.givingOptions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.givingCard {
+  background: $red;
+  border-radius: 12px;
+  border: 5px solid white;
+
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: white;
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: $blue;
+    font-weight: 900;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}

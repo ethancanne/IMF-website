@@ -489,9 +489,38 @@ module.exports = {
               widget: 'image',
             },
             {
+              label: 'Header Text',
+              name: 'header',
+              widget: 'string',
+            },
+            {
               label: 'Description',
               name: 'description',
               widget: 'markdown',
+            },
+            {
+              label: 'Giving Options',
+              name: 'givingOptions',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                },
+                {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                },
+                {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                },
+              ],
             },
           ],
         },
