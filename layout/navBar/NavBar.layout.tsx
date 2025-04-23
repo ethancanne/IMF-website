@@ -43,7 +43,9 @@ const NavBar = (props: Props) => {
           </Link>
         ))}
 
-        <DonateButton light={props.isSubtle} small />
+        <div className={styles.donate}>
+          <DonateButton light={props.isSubtle} small />
+        </div>
 
         <motion.div
           whileHover={{

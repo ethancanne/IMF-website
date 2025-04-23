@@ -140,11 +140,11 @@
           }
         }
       }
-    }
-    .donateButton {
-      border: white 1px solid !important;
-      color: white !important;
-      background-color: rgba(0, 0, 0, 0) !important;
+      .donate {
+        @include mobile {
+          display: none;
+        }
+      }
     }
   }
 }
