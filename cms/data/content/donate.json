@@ -6,7 +6,8 @@
     {
       "title": "Donorbox (Online Giving)",
       "description": "* Credit or Debit Card\n* Apple Pay, Amazon Pay, Cash App\n* Direct Bank Transfer\n\nYou can choose to cover the processing fee if you'd like.",
-      "link": "https://donorbox.org/your-campaign"
+      "link": "https://donorbox.org/your-campaign",
+      "linkTitle": "Give via Donorbox"
     },
     {
       "title": "Zelle (No Fees!)",
@@ -14,12 +15,14 @@
     },
     {
       "title": "By Check",
-      "description": "Mail your gift to:\n\nP.O. Box 32, Odessa, DE 19730-0032\n\nMake checks payable to: **International Missionary Fellowship**"
+      "description": "Mail your gift to:\n\nP.O. Box 32, Odessa, DE 19730-0032\n\nMake checks payable to: **International Missionary Fellowship**",
+      "linkTitle": ""
     },
     {
       "title": "PayPal",
       "description": "Donate via credit card or linked bank account.\n\n*Note: PayPal deducts a small processing fee from your donation.*",
-      "link": "https://paypal.me/yourlink"
+      "link": "https://paypal.me/yourlink",
+      "linkTitle": "Give Via Paypal"
     }
   ]
 }
