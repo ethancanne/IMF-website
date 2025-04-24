@@ -5,6 +5,10 @@
   margin: 0 auto;
   font-family: 'Metropolis';
   color: black;
+
+  @include mobile {
+    padding: 1rem;
+  }
   .title {
     font-size: $fz-lg;
     margin-bottom: 0.5rem;

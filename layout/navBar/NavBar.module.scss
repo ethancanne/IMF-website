@@ -140,11 +140,11 @@
           }
         }
       }
-      .donate {
-        @include mobile {
-          display: none;
-        }
-      }
+    }
+  }
+  .donate {
+    @include mobile {
+      display: none;
     }
   }
 }
