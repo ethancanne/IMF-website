@@ -52,13 +52,8 @@
   ],
   "boardOfDirectors": [
     {
-      "name": "Joseph (Bo) Lundy",
-      "position": "President (BoLundy@HaitiHospital.org)",
-      "image": "img/bo.jpeg"
-    },
-    {
       "name": "Paul Northen",
-      "position": "Vice President (Paul@HaitiHospital.org)",
+      "position": "President (Paul@HaitiHospital.org)",
       "image": "img/paul-northen-pic-2.jpg"
     },
     {
@@ -70,6 +65,11 @@
       "name": "Jake VanWingerden",
       "position": "Secretary",
       "image": "img/jake-wendy-vanwingerden.jpg"
+    },
+    {
+      "name": "Joseph (Bo) Lundy",
+      "position": "Board Member (BoLundy@HaitiHospital.org)",
+      "image": "img/bo.jpeg"
     },
     {
       "name": "Zachary Northen",
