@@ -58,8 +58,13 @@
     },
     {
       "name": "Chris Daly",
-      "position": "Treasurer",
+      "position": "Vice President",
       "image": "img/chris-daly.jpg"
+    },
+    {
+      "name": "Kathy Daly",
+      "position": "Treasurer",
+      "image": "img/placeholder.jpeg"
     },
     {
       "name": "Jake VanWingerden",
