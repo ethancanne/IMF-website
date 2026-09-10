@@ -9,12 +9,24 @@
   @include mobile {
     padding: 1rem;
   }
-  .title {
-    font-size: $fz-lg;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    @include mobile {
-      font-size: $fz-md;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .title {
+      font-size: $fz-lg;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      @include mobile {
+        font-size: $fz-md;
+      }
+    }
+    .imageContainer {
+      .image {
+        margin: 0rem;
+      }
     }
   }
 

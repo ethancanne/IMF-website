@@ -1,7 +1,7 @@
-import React from 'react';
 import styles from './DonateView.module.scss';
 import donateInfo from '../../cms/data/content/donate.json';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 
 const DonateView = () => {
   return (
@@ -13,7 +13,20 @@ const DonateView = () => {
         <div className={styles.givingOptions}>
           {donateInfo.givingOptions.map((option, index) => (
             <div className={styles.givingCard} key={option.title + index}>
-              <h2>{option.title}</h2>
+              <div className={styles.titleContainer}>
+                <h2>{option.title}</h2>
+                {option.image && (
+                  <div className={styles.imageContainer}>
+                    <Image
+                      src={'/' + option.image}
+                      alt={option.title}
+                      className={styles.image}
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                )}
+              </div>
               <div className={styles.markdown}>
                 <ReactMarkdown>{option.description}</ReactMarkdown>
               </div>
