@@ -11,17 +11,16 @@ const MissionTeamVisits = (props: Props) => {
     <div className={styles.container}>
       <h1 className={styles.title}>Mission Team Visits</h1>
       <div className={styles.imageContainer}>
-        {getInvolved.missionTeamVisitsImages.map((i) => (
-          <>
-            <Image
-              src={'/' + i.image}
-              alt={i.altText}
-              width={350}
-              height={250}
-              className={styles.image}
-              style={{ objectFit: 'cover' }}
-            />
-          </>
+        {getInvolved.missionTeamVisitsImages.map((i, idx) => (
+          <Image
+            key={i.image + idx}
+            src={'/' + i.image}
+            alt={i.altText}
+            width={350}
+            height={250}
+            className={styles.image}
+            style={{ objectFit: 'cover' }}
+          />
         ))}
       </div>
     </div>

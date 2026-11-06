@@ -1,6 +1,7 @@
 import styles from './MissionaryItem.module.scss';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
+
 type Props = {
   name: string;
   position: string;
@@ -9,29 +10,30 @@ type Props = {
 };
 
 const MissionaryItem = (props: Props) => {
+  const imageSrc = props.image.startsWith('/')
+    ? props.image
+    : `/${props.image}`;
+
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.name}>{props.name}</h1>
-        <h2 className={styles.position}>{props.position}</h2>
-        <p className={styles.description}>
-          <ReactMarkdown>{props.description}</ReactMarkdown>
-        </p>
+    <article className={styles.container}>
+      <div className={styles.imageWrapper}>
+        <Image
+          src={imageSrc}
+          alt={props.name}
+          className={styles.image}
+          width={320}
+          height={360}
+        />
       </div>
 
-      <Image
-        src={'/' + props.image}
-        alt={props.name}
-        className={styles.image}
-        width={300}
-        height={350}
-        style={{
-          objectFit: 'cover', //make it responsive
-          objectPosition: 'top',
-          // width: '100%',
-        }}
-      />
-    </div>
+      <div className={styles.content}>
+        <span className={styles.position}>{props.position}</span>
+        <h3 className={styles.name}>{props.name}</h3>
+        <div className={styles.description}>
+          <ReactMarkdown>{props.description}</ReactMarkdown>
+        </div>
+      </div>
+    </article>
   );
 };
 

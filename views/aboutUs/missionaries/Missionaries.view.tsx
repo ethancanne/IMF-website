@@ -6,19 +6,26 @@ type Props = {};
 
 const Missionaries = (props: Props) => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Missionaries</h1>
-      <div className={styles.missionaries}>
-        {aboutUs.missionaries.map((missionary) => (
-          <MissionaryItem
-            name={missionary.name}
-            position={missionary.position}
-            description={missionary.description}
-            image={missionary.image}
-          />
-        ))}
+    <section className={styles.container}>
+      <div className={styles.inner}>
+        <div className={styles.header}>
+          <span className={styles.eyebrow}>Faithful Service</span>
+          <h2 className={styles.title}>Missionaries</h2>
+        </div>
+
+        <div className={styles.missionaries}>
+          {aboutUs.missionaries.map((missionary) => (
+            <MissionaryItem
+              key={missionary.name}
+              name={missionary.name}
+              position={missionary.position}
+              description={missionary.description}
+              image={missionary.image}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

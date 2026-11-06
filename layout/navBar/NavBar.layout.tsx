@@ -1,36 +1,42 @@
 import styles from './NavBar.module.scss';
-type Props = {
-  setMenuIsOpen: any;
-  menuIsOpen: any;
-  isSubtle: boolean;
-  setIsSubtle: any;
-};
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import pages from '../../cms/data/websiteLayout/pages.json';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import aboutAndContact from '../../cms/data/websiteLayout/aboutAndContact.json';
 import DonateButton from '../../components/donateButton/DonateButton.component';
+
+type Props = {
+  setMenuIsOpen: (open: boolean) => void;
+  menuIsOpen: boolean;
+  isSubtle: boolean;
+  setIsSubtle: (subtle: boolean) => void;
+};
 
 const NavBar = (props: Props) => {
   const router = useRouter();
   return (
-    <div
+    <header
       className={`${styles.container} ${props.isSubtle ? styles.subtle : ''}`}
     >
-      <Link href="/" className={styles.logo}>
+      <Link
+        href="/"
+        className={styles.logo}
+        onClick={() => props.setMenuIsOpen(false)}
+      >
         <Image
-          src={`${props.isSubtle ? '/white-logo.png' : '/logo.png'}`}
-          width={props.isSubtle ? 200 : 200}
-          height={props.isSubtle ? 100 : 70}
+          src={props.isSubtle ? '/white-logo.png' : '/logo.png'}
+          width={180}
+          height={64}
           style={{ objectFit: 'contain' }}
-          alt="logo"
+          alt="IMF Haiti Hospital logo"
+          priority
         />
-        <h1>Haiti Hospital</h1>
+        <span className={styles.brandSubtitle}>Haiti Hospital</span>
       </Link>
-      <div className={styles.navLinks}>
+
+      <nav className={styles.navLinks} aria-label="Main navigation">
         {pages.pages.map((page, index) => (
           <Link
             href={page.link}
@@ -47,29 +53,29 @@ const NavBar = (props: Props) => {
           <DonateButton light={props.isSubtle} small />
         </div>
 
-        <motion.div
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            scale: 0.9,
-          }}
+        <motion.button
+          type="button"
+          aria-label={props.menuIsOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={props.menuIsOpen}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.92 }}
           transition={{
             duration: 0.2,
             type: 'spring',
-            stiffness: 100,
-            damping: 10,
+            stiffness: 200,
+            damping: 16,
           }}
           onClick={() => {
-            props.setMenuIsOpen(!props.menuIsOpen);
-            props.setIsSubtle(false);
+            const next = !props.menuIsOpen;
+            props.setMenuIsOpen(next);
+            if (next) props.setIsSubtle(false);
           }}
           className={styles.menu}
         >
           {props.menuIsOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-        </motion.div>
-      </div>
-    </div>
+        </motion.button>
+      </nav>
+    </header>
   );
 };
 

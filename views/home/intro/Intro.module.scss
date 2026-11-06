@@ -1,62 +1,76 @@
 @import '../../../styles/globals.scss';
+
 .wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 
   .container {
     position: relative;
-    top: -40px;
+    top: -56px;
     z-index: 90;
-    width: 80%;
-    @include mobile {
-      width: 95%;
-    }
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 24px;
+    padding: 44px clamp(20px, 4vw, 52px) 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
-    background-color: white;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
+    box-shadow: 0 24px 64px rgba(17, 20, 46, 0.12);
+    background-color: #ffffff;
+    color: #1f2430;
+    font-family: 'Metropolis', sans-serif;
     text-align: center;
+
+    @include mobile {
+      top: -32px;
+      border-radius: 18px;
+      padding: 28px 18px 36px;
+    }
 
     .cardsContainer {
       width: 100%;
-      display: flex;
-      @include mobile {
-        flex-wrap: wrap;
-      }
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 26px;
+      align-items: stretch;
 
       .card {
-        margin: 0 20px;
+        display: flex;
+        width: 100%;
       }
     }
 
     .textContainer {
+      max-width: 860px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: $pagePadding;
-      margin-top: 1rem;
-      font-size: $fz-sm;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid #ebedf3;
+
+      @include mobile {
+        margin-top: 34px;
+        padding-top: 28px;
+      }
 
       p:first-child {
+        font-size: clamp(20px, 2.2vw, 26px);
+        line-height: 1.45;
         font-weight: 700;
-        margin-bottom: 1rem;
+        color: #1f2430;
+        margin: 0 0 16px;
       }
+
       p:last-child {
+        font-size: clamp(16px, 1.6vw, 19px);
+        line-height: 1.7;
         font-weight: 300;
-        margin-bottom: 1rem;
+        color: #4f5668;
+        margin: 0;
       }
     }
   }

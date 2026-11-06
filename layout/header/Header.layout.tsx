@@ -17,7 +17,7 @@ const Header = (props: Props) => {
     : '';
 
   return (
-    <div
+    <section
       className={`${styles.container} ${props.isSubPage ? styles.subPage : ''}`}
       style={{
         backgroundImage: imageSrc ? `url(${imageSrc})` : undefined,
@@ -25,10 +25,14 @@ const Header = (props: Props) => {
     >
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>{props.title}</h1>
-        <p className={styles.subTitle}>{props.subTitle}</p>
+        {props.subTitle && <p className={styles.subTitle}>{props.subTitle}</p>}
       </div>
-      {props.donate && <DonateButton light={true} />}
-    </div>
+      {props.donate && (
+        <div className={styles.ctaWrapper}>
+          <DonateButton light={true} />
+        </div>
+      )}
+    </section>
   );
 };
 

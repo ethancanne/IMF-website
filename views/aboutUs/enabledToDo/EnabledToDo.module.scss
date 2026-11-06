@@ -1,24 +1,74 @@
 @import '../../../styles/globals.scss';
+
 .container {
   padding: $pagePadding;
+  background-color: #f5f7fa;
+  border-top: 1px solid #e9ecf3;
 
-  .title {
-    font-size: $fz-lg;
-    font-weight: 900;
-    color: $red;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 44px;
 
     @include mobile {
-      font-size: $fz-md;
-      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background-color: rgba($blue, 0.1);
+      color: $blue;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: clamp(28px, 3.6vw, 42px);
+      line-height: 1.2;
+      font-weight: 700;
+      color: #1f2430;
+      margin: 0;
     }
   }
 
   .enabledItems {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+  }
+
+  .itemCard {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(20, 30, 55, 0.07);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    padding: 24px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    .checkIcon {
+      color: $red;
+      font-size: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 15.5px;
+      line-height: 1.62;
+      font-weight: 400;
+      color: #2b3040;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import styles from './Card.module.scss';
 import Image from 'next/image';
-import { Component } from 'react';
+
 type Props = {
   title: string;
   description?: string;
@@ -11,20 +11,34 @@ type Props = {
 };
 
 const Card = (props: Props) => {
+  const imageSrc = props.image
+    ? props.image.startsWith('/') || props.image.startsWith('http')
+      ? props.image
+      : `/${props.image}`
+    : null;
+
+  const isTextOnly = !imageSrc && !props.icon && !props.description;
+
   return (
-    <div className={`${styles.container} ${props.red && styles.red}`}>
-      {props.image && (
-        <Image
-          src={'/' + props.image}
-          alt={props.title}
-          width={300}
-          height={400}
-          style={{
-            objectFit: props.cover ? 'cover' : 'contain', //make it responsive
-            objectPosition: 'center',
-            width: props.cover ? '100%' : '50%',
-          }}
-        />
+    <div
+      className={`${styles.container} ${props.red ? styles.red : ''} ${
+        isTextOnly ? styles.textOnly : ''
+      }`}
+    >
+      {imageSrc && (
+        <div
+          className={
+            props.cover ? styles.coverImageWrapper : styles.iconImageWrapper
+          }
+        >
+          <Image
+            src={imageSrc}
+            alt={props.title}
+            width={400}
+            height={props.cover ? 280 : 140}
+            className={props.cover ? styles.coverImage : styles.iconImage}
+          />
+        </div>
       )}
       {props.icon && (
         <div className={styles.icon}>
@@ -32,7 +46,7 @@ const Card = (props: Props) => {
         </div>
       )}
       <div className={styles.info}>
-        <h1>{props.title}</h1>
+        <h3>{props.title}</h3>
         {props.description && <p>{props.description}</p>}
       </div>
     </div>

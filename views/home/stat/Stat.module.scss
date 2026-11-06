@@ -1,38 +1,112 @@
 @import '../../../styles/globals.scss';
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  padding: $pagePadding;
-  line-height: 60px;
-  @include mobile {
-    line-height: 30px;
+  padding: 28px clamp(20px, 6vw, 120px) 72px;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba($blue, 0.1);
+    color: $blue;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: center;
   }
 
-  strong {
-    font-weight: 900;
-    color: $red;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    width: 100%;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
+
+  .statCard {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 34px 32px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(20, 30, 55, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    @include mobile {
+      padding: 26px 22px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin: 0;
+      font-size: clamp(17px, 1.7vw, 20px);
+      line-height: 1.65;
+    }
+
+    strong {
+      font-weight: 700;
+      font-size: 1.12em;
+    }
+  }
+
   .before {
-    color: rgb(88, 88, 88);
-    font-weight: 300;
-    font-size: $fz-sm;
-    @include mobile {
-      font-size: $fz-xs;
+    border-top: 4px solid #8c95a6;
+
+    .tag {
+      background-color: #f0f2f6;
+      color: #5a6275;
+    }
+
+    p {
+      color: #535b6e;
+      font-weight: 300;
+    }
+
+    strong {
+      color: #2b3040;
     }
   }
+
   .after {
-    color: rgb(53, 53, 53);
-    font-weight: 400;
-    font-size: $fz-md;
-    line-height: 60px;
-    @include mobile {
-      font-size: $fz-sm;
+    border-top: 4px solid $red;
+    box-shadow: 0 14px 36px rgba($red, 0.1);
+
+    .tag {
+      background-color: rgba($red, 0.12);
+      color: $red;
     }
-    @include mobile {
-      line-height: 30px;
+
+    p {
+      color: #2b3040;
+      font-weight: 400;
+    }
+
+    strong {
+      color: $red;
     }
   }
 }

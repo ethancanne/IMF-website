@@ -1,18 +1,25 @@
 @import '../../../styles/globals.scss';
+
 .container {
-  padding: 50px clamp(10vw, 5vw, 20vw);
-  background-color: white;
-  border-top: rgba(0, 0, 0, 0.132) 4px solid;
+  padding: $pagePadding;
+  background-color: #ffffff;
+  border-top: 1px solid #e9ecf3;
 
   .video {
-    padding: 20px;
-    .title {
-      color: $blue;
-      font-size: $fz-xl;
+    max-width: 920px;
+    margin: 0 auto 44px;
 
-      @include mobile {
-        font-size: $fz-md;
-      }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .title {
+      color: #1f2430;
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0 0 20px;
+      text-align: center;
     }
   }
 }

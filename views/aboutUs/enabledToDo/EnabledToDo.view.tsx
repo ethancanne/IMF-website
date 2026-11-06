@@ -1,19 +1,28 @@
 import styles from './EnabledToDo.module.scss';
-import Card from '../../../components/card/Card.component';
 import aboutUs from '../../../cms/data/content/aboutUs.json';
+import { FaCheckCircle } from 'react-icons/fa';
 
 type Props = {};
 
 const EnabledToDo = (props: Props) => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>What the Lord has enabled us to do</h1>
-      <div className={styles.enabledItems}>
-        {aboutUs.enabledToDo.map((enabled) => (
-          <Card title={enabled.description} cover key={enabled.description} />
-        ))}
+    <section className={styles.container}>
+      <div className={styles.inner}>
+        <div className={styles.header}>
+          <span className={styles.eyebrow}>Fruit of the Ministry</span>
+          <h2 className={styles.title}>What the Lord Has Enabled Us to Do</h2>
+        </div>
+
+        <div className={styles.enabledItems}>
+          {aboutUs.enabledToDo.map((enabled, index) => (
+            <div className={styles.itemCard} key={enabled.description + index}>
+              <FaCheckCircle className={styles.checkIcon} />
+              <p>{enabled.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

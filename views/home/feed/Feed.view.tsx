@@ -1,46 +1,57 @@
 import { useState } from 'react';
 import styles from './Feed.module.scss';
-import FeedItem from './components/feedItem/FeedItem.component';
 import home from '../../../cms/data/content/home.json';
 import Video from '../../../components/video/Video.component';
+import { FaExternalLinkAlt, FaRegNewspaper } from 'react-icons/fa';
 
 type Props = {};
 
 const Feed = (props: Props) => {
   const [selectedNewsletterLink, setSelectedNewsletterLink] = useState(
-    home.newsletters[0].link
+    home.newsletters[0]?.link || ''
   );
 
-  const onNewsletterChange = (e: any) => {
-    console.log(e.target.value);
+  const onNewsletterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedNewsletterLink(e.target.value);
   };
 
   const onNewsletterSubmit = () => {
-    (window.location as any) = selectedNewsletterLink;
+    if (!selectedNewsletterLink) return;
+    window.open(selectedNewsletterLink, '_blank', 'noopener,noreferrer');
   };
 
   return (
-    <div className={styles.container}>
-      {/* <h1 className={styles.title}>Stay Updated</h1>
-      <div className={styles.feed}>
-        <FeedItem
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies"
-          image="/img/campus.jpeg"
-          date="June 1, 2021"
-        />
-      </div> */}
+    <section className={styles.container}>
+      <div className={styles.videoSection}>
+        <span className={styles.eyebrow}>See Our Mission in Action</span>
+        <h2 className={styles.sectionTitle}>Life &amp; Ministry in Bombardopolis</h2>
+        <div className={styles.videoFrame}>
+          <Video url="https://www.youtube.com/embed/HVfINeQyhvk" iframe />
+        </div>
+      </div>
 
-      <Video url="https://www.youtube.com/embed/HVfINeQyhvk" iframe />
+      <div className={styles.newsletterCard}>
+        <div className={styles.newsletterHeader}>
+          <div className={styles.iconCircle}>
+            <FaRegNewspaper />
+          </div>
+          <div>
+            <h3 className={styles.newsletterDropdownTitle}>
+              Read Our Newsletters
+            </h3>
+            <p className={styles.newsletterSubtitle}>
+              Catch up on quarterly stories, updates, and prayer requests from
+              Haiti.
+            </p>
+          </div>
+        </div>
 
-      <div className={styles.newsletterDropdownContainer}>
-        <h1 className={styles.newsletterDropdownTitle}>
-          Checkout our newsletter
-        </h1>
-        <div className={styles.dropdown}>
+        <div className={styles.dropdownRow}>
           <select
             id="newsletters"
             name="newsletters"
+            aria-label="Select a newsletter issue"
+            value={selectedNewsletterLink}
             onChange={onNewsletterChange}
           >
             {home.newsletters.map((newsletter) => (
@@ -49,12 +60,17 @@ const Feed = (props: Props) => {
               </option>
             ))}
           </select>
-          <button className={styles.button} onClick={onNewsletterSubmit}>
-            Go
+          <button
+            type="button"
+            className={styles.button}
+            onClick={onNewsletterSubmit}
+          >
+            <span>Open Issue</span>
+            <FaExternalLinkAlt size={13} />
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,54 +1,62 @@
 @import '../../styles/globals.scss';
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(15, 20, 40, 0.08);
   z-index: 100000;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 3rem;
-  padding: 0 2rem;
-  transition: all 0.3s ease-in-out;
-  max-width: 3000px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  max-width: 3000px;
+  height: 82px;
+  padding: 0 clamp(20px, 4vw, 56px);
+  transition: background-color 0.28s ease, box-shadow 0.28s ease,
+    height 0.28s ease;
 
   @include mobile {
-    padding: 0 20px 0 10px;
+    height: 72px;
+    padding: 0 18px;
   }
 
   .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 50%;
+    gap: 16px;
+    height: 100%;
 
     img {
+      height: 50px;
+      width: auto;
+      transition: transform 0.25s ease;
+
       @include mobile {
-        width: 150px;
+        height: 42px;
+        max-width: 132px;
       }
     }
 
-    h1 {
+    .brandSubtitle {
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding-left: 20px;
-      font-size: $fz-xxs;
-      font-weight: 900;
-      height: 100%;
-      border-left: rgba(0, 0, 0, 0.223) 2px solid;
+      padding-left: 16px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      height: 32px;
+      border-left: 2px solid rgba(0, 0, 0, 0.16);
       color: $red;
-      margin: 0;
+      white-space: nowrap;
+      transition: color 0.28s ease, border-color 0.28s ease;
 
-      @include mobile {
-        margin-top: 0;
-        margin: 0 5px;
-        padding: 0 10px;
+      @media (max-width: 560px) {
+        display: none;
       }
     }
   }
@@ -56,95 +64,130 @@
   .navLinks {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 900 !important;
+    gap: 8px;
     height: 100%;
 
     .link {
       @include mobile {
         display: none;
       }
-      margin: 0 1rem;
-      font-size: $fz-xxs;
-      color: #000;
+      padding: 0 16px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #2b3040;
       text-decoration: none;
-      color: $red;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
+      transition: color 0.2s ease;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        background-color: $red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.22s ease, background-color 0.22s ease;
+      }
+
+      &:hover {
+        color: $red;
+      }
 
       &.active {
+        color: $red;
+        font-weight: 700;
+
         &::after {
-          content: '';
-          display: block;
-          width: 100%;
-          height: 4px;
-          background-color: $red;
-          position: absolute;
-          bottom: 0;
+          transform: scaleX(1);
         }
-        // border-bottom: $red 2px solid;
       }
+    }
+  }
+
+  .donate {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      margin-left: 0;
+      margin-right: 6px;
     }
   }
 
   .menu {
     display: none;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
     color: $red;
+    font-size: 26px;
     cursor: pointer;
+    padding: 0;
 
     @include mobile {
-      display: block;
+      display: flex;
     }
   }
 
   &.subtle {
     background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     box-shadow: none;
-    color: white;
-    padding-top: 25px;
+    height: 96px;
+
+    @include mobile {
+      height: 78px;
+    }
 
     .menu {
-      color: white;
+      color: #ffffff;
     }
-    .logo {
-      img {
-        @include mobile {
-          width: 150px;
-        }
-      }
 
-      h1 {
-        color: white;
-        border-left: rgba(255, 255, 255, 0.223) 2px solid;
-        margin-left: 20px;
-        margin-top: 20px;
-        @include mobile {
-          margin-top: 0;
-          margin: 0 5px;
-          padding: 0 10px;
-        }
+    .logo {
+      .brandSubtitle {
+        color: #ffffff;
+        border-left-color: rgba(255, 255, 255, 0.35);
       }
     }
+
     .navLinks {
       .link {
-        color: white;
+        color: rgba(255, 255, 255, 0.92);
+
+        &:hover {
+          color: #ffffff;
+        }
+
+        &::after {
+          background-color: #ffffff;
+          bottom: 20px;
+          border-radius: 3px;
+        }
+
         &.active {
-          font-weight: 900;
+          color: #ffffff;
+          font-weight: 700;
 
           &::after {
-            background-color: rgba(255, 255, 255, 0) !important;
+            transform: scaleX(0.6);
           }
         }
       }
-    }
-  }
-  .donate {
-    @include mobile {
-      display: none;
     }
   }
 }

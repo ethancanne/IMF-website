@@ -6,15 +6,18 @@ type Props = {};
 
 const Intro = (props: Props) => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>
-        International <span>Missionary</span> Fellowship
-      </h1>
-      <h4 className={styles.subTitle}>Haiti Hospital</h4>
-      <p className={styles.content}>
-        <ReactMarkdown>{aboutUs.intro}</ReactMarkdown>
-      </p>
-    </div>
+    <section className={styles.container}>
+      <div className={styles.inner}>
+        <span className={styles.eyebrow}>501(c)(3) Christian Nonprofit</span>
+        <h2 className={styles.title}>
+          International <span>Missionary</span> Fellowship
+        </h2>
+        <p className={styles.subTitle}>Hospital Evangelique de Bombardopolis</p>
+        <div className={styles.content}>
+          <ReactMarkdown>{aboutUs.intro}</ReactMarkdown>
+        </div>
+      </div>
+    </section>
   );
 };
 

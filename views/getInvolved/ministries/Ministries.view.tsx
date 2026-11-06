@@ -15,6 +15,7 @@ const Ministries = (props: Props) => {
       <div className={styles.ministries}>
         {getInvolved.missions.map((mission) => (
           <MinistryItem
+            key={mission.title}
             image={mission.image}
             name={mission.title}
             description={mission.description}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './DonateButton.module.scss';
+
 type Props = {
   light?: boolean;
   small?: boolean;
@@ -7,14 +8,13 @@ type Props = {
 
 const DonateButton = (props: Props) => {
   return (
-    <Link href={'/donate'}>
-      <button
-        className={`${styles.donateButton} ${props.light ? styles.light : ''} ${
-          props.small ? styles.small : ''
-        }`}
-      >
-        Donate
-      </button>
+    <Link
+      href="/donate"
+      className={`${styles.donateButton} ${props.light ? styles.light : ''} ${
+        props.small ? styles.small : ''
+      }`}
+    >
+      Donate
     </Link>
   );
 };

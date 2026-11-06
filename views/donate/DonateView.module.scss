@@ -1,41 +1,88 @@
 @import '../../styles/globals.scss';
-.waysToGive {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  font-family: 'Metropolis';
-  color: black;
+
+.container {
+  background-color: #f5f7fa;
+  padding: 64px clamp(20px, 6vw, 120px) 84px;
 
   @include mobile {
-    padding: 1rem;
+    padding: 44px 18px 60px;
+  }
+}
+
+.waysToGive {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: 'Metropolis', sans-serif;
+  color: #1f2430;
+}
+
+.headerBlock {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+
+  @include mobile {
+    margin-bottom: 34px;
   }
 
-  .titleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    .title {
-      font-size: $fz-lg;
-      margin-bottom: 0.5rem;
-      text-align: center;
-      @include mobile {
-        font-size: $fz-md;
-      }
-    }
-    .imageContainer {
-      .image {
-        margin: 0rem;
-      }
-    }
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba($red, 0.1);
+    color: $red;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .title {
+    font-size: clamp(28px, 3.6vw, 44px);
+    line-height: 1.18;
+    font-weight: 700;
+    color: #1f2430;
+    margin: 0 0 14px;
   }
 
   .subTitle {
-    font-size: $fz-sm;
-    text-align: center;
-    margin-bottom: 2rem;
-    @include mobile {
-      font-size: $fz-xs;
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.6;
+    font-weight: 300;
+    color: #535b6e;
+    margin: 0 0 22px;
+  }
+
+  .trustRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4f5973;
+
+    .trustItem {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      svg {
+        color: $blue;
+      }
+    }
+
+    .trustDot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #c5cad8;
+
+      @media (max-width: 560px) {
+        display: none;
+      }
     }
   }
 }
@@ -43,56 +90,252 @@
 .givingOptions {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 26px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 820px) {
     grid-template-columns: 1fr 1fr;
   }
+}
 
-  .givingCard {
-    background: $red;
-    border-radius: 12px;
-    border: 5px solid white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+.givingCard {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 30, 55, 0.08);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: $blue;
+  }
+
+  &.featured {
+    border-color: rgba($red, 0.28);
+    box-shadow: 0 14px 36px rgba($red, 0.1);
+
+    &::before {
+      height: 5px;
+      background: linear-gradient(90deg, $red 0%, $blue 100%);
+    }
+  }
+
+  @include mobile {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba($blue, 0.1);
+  color: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+
+  .featured & {
+    background: rgba($red, 0.12);
+    color: $red;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background-color: #f1f3f9;
+  color: #49526b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  &.featuredBadge {
+    background-color: rgba($red, 0.12);
+    color: $red;
+  }
+}
+
+.cardTitle {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #1f2430;
+  margin: 0 0 14px;
+}
+
+.contentSplit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 540px) {
     flex-direction: column;
+  }
+}
 
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    color: white;
+.markdown {
+  flex: 1;
+  font-size: 15.5px;
+  line-height: 1.65;
+  font-weight: 300;
+  color: #454d5e;
 
-    @include mobile {
-      padding: 1rem;
+  p {
+    margin: 0 0 12px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    h2 {
-      font-size: $fz-sm;
+  ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 6px;
     }
-    .markdown {
-      font-size: $fz-xs;
+  }
+
+  strong {
+    font-weight: 600;
+    color: #1f2430;
+  }
+
+  em {
+    color: #656e83;
+    font-size: 14px;
+  }
+}
+
+.qrCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #f8f9fc;
+  border: 1px solid #e6e9f2;
+  flex-shrink: 0;
+
+  @media (max-width: 540px) {
+    align-self: center;
+  }
+
+  .qrImage {
+    border-radius: 8px;
+    display: block;
+  }
+
+  .qrCaption {
+    margin-top: 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #5b647a;
+    letter-spacing: 0.02em;
+  }
+}
+
+.cardFooter {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1.5px solid rgba($blue, 0.32);
+  background-color: rgba($blue, 0.06);
+  color: $blue;
+  font-family: 'Metropolis', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    background-color: rgba($blue, 0.13);
+    border-color: $blue;
+    transform: translateY(-1px);
+  }
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 14px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15.5px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+
+  &.primaryCta {
+    background-color: $red;
+    color: #ffffff;
+    border: 2px solid $red;
+    box-shadow: 0 8px 20px rgba($red, 0.26);
+
+    &:hover {
+      background-color: darken($red, 7%);
+      border-color: darken($red, 7%);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px rgba($red, 0.34);
     }
+  }
 
-    a {
-      display: inline-block;
-      margin-top: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-      color: $blue;
-      font-weight: 900;
-      background-color: white;
-      padding: 0.5rem 2rem;
-      border-radius: 30px;
-      text-align: center;
-      font-size: $fz-xs;
-      @include mobile {
-        font-size: $fz-xxs;
-        width: 100%;
-      }
+  &.secondaryCta {
+    background-color: $blue;
+    color: #ffffff;
+    border: 2px solid $blue;
+    box-shadow: 0 8px 20px rgba($blue, 0.22);
 
-      &:hover {
-        text-decoration: underline;
-      }
+    &:hover {
+      background-color: darken($blue, 7%);
+      border-color: darken($blue, 7%);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px rgba($blue, 0.3);
     }
   }
 }

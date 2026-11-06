@@ -1,39 +1,126 @@
 @import '../../styles/globals.scss';
+
 .container {
   padding: $pagePadding;
-  .title {
-    font-size: $fz-lg;
-    font-weight: 900;
-    color: $red;
-    margin: 0;
-    padding: 0;
+  background-color: #f5f7fa;
+}
 
-    @include mobile {
-      font-size: $fz-md;
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introBlock {
+  max-width: 860px;
+  margin: 0 auto 52px;
+  text-align: center;
+
+  @include mobile {
+    margin-bottom: 36px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba($red, 0.1);
+    color: $red;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .topDescription {
+    p {
+      margin: 0;
+      font-size: clamp(18px, 2vw, 23px);
+      line-height: 1.6;
+      font-weight: 400;
+      color: #2b3040;
+    }
+  }
+}
+
+.causesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.causeCard {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 30, 55, 0.08);
+  border-top: 4px solid $red;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  padding: 32px;
+
+  &:nth-child(even) {
+    border-top-color: $blue;
+
+    .iconBadge {
+      background-color: rgba($blue, 0.1);
+      color: $blue;
     }
   }
 
-  .cause {
-    padding-bottom: 30px;
-    .causeTitle {
-      font-size: $fz-md;
-      font-weight: 900;
-      color: $red;
+  @include mobile {
+    padding: 24px 20px;
+  }
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .iconBadge {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    background-color: rgba($red, 0.1);
+    color: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .causeTitle {
+    p {
       margin: 0;
-      padding: 0;
-      @include mobile {
-        font-size: $fz-sm;
+      font-size: 23px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #1f2430;
+    }
+  }
+
+  .description {
+    p {
+      font-size: 15.5px;
+      line-height: 1.72;
+      font-weight: 300;
+      color: #485063;
+      margin: 0 0 12px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
-    .description {
-      font-size: $fz-sm;
-      font-weight: 400;
-      color: rgb(47, 47, 47);
-      margin-bottom: 10px;
-      line-height: 30px;
-      @include mobile {
-        font-size: $fz-xs;
-      }
+
+    strong {
+      font-weight: 600;
+      color: $red;
     }
   }
 }

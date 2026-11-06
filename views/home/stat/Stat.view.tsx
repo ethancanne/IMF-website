@@ -6,14 +6,19 @@ type Props = {};
 
 const Stat = (props: Props) => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.before}>
-        <ReactMarkdown>{home.statistic.beforeStatistic}</ReactMarkdown>
-      </h1>
-      <h1 className={styles.after}>
-        <ReactMarkdown>{home.statistic.afterStatistic}</ReactMarkdown>
-      </h1>
-    </div>
+    <section className={styles.container}>
+      <span className={styles.eyebrow}>50+ Years of Life-Saving Impact</span>
+      <div className={styles.grid}>
+        <div className={`${styles.statCard} ${styles.before}`}>
+          <span className={styles.tag}>Then</span>
+          <ReactMarkdown>{home.statistic.beforeStatistic}</ReactMarkdown>
+        </div>
+        <div className={`${styles.statCard} ${styles.after}`}>
+          <span className={styles.tag}>Today</span>
+          <ReactMarkdown>{home.statistic.afterStatistic}</ReactMarkdown>
+        </div>
+      </div>
+    </section>
   );
 };
 

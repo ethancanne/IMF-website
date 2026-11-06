@@ -17,41 +17,46 @@ type Props = {
 };
 
 const Page = (props: Props) => {
-  const [menuIsOpen, setMenuIsOpen] = useState();
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [isSubtle, setIsSubtle] = useState(true);
 
   useEffect(() => {
-    window.onscroll = () => {
-      if (window.scrollY < 20) setIsSubtle(true);
-      else setIsSubtle(false);
+    const handleScroll = () => {
+      setIsSubtle(window.scrollY < 24);
     };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const pageTitle = props.isSubPage
+    ? `${props.title} | IMF - Haiti Hospital`
+    : 'IMF - Haiti Hospital';
 
   return (
     <div className={styles.pageWrapper}>
+      <Head>
+        <title>{pageTitle}</title>
+      </Head>
       <DonationSuccessModal />
+      <NavBar
+        setMenuIsOpen={setMenuIsOpen}
+        menuIsOpen={menuIsOpen}
+        isSubtle={isSubtle && !menuIsOpen}
+        setIsSubtle={setIsSubtle}
+      />
+      <AnimatePresence initial={false} mode="wait">
+        {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}
+      </AnimatePresence>
       <motion.div
         className={styles.pageContainer}
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0,
-          type: 'spring',
-          stiffness: 100,
+          duration: 0.3,
+          ease: 'easeOut',
         }}
       >
-        <Head>
-          <title>IMF - Haiti Hospital</title>
-        </Head>
-        <NavBar
-          setMenuIsOpen={setMenuIsOpen}
-          menuIsOpen={menuIsOpen}
-          isSubtle={isSubtle}
-          setIsSubtle={setIsSubtle}
-        />
-        <AnimatePresence initial={false} mode="wait">
-          {menuIsOpen && <Menu setMenuIsOpen={setMenuIsOpen} />}
-        </AnimatePresence>
         <Header
           title={props.title}
           subTitle={props.subTitle}
@@ -60,7 +65,7 @@ const Page = (props: Props) => {
           image={props.image}
         />
         {props.children}
-        <Footer />{' '}
+        <Footer />
       </motion.div>
     </div>
   );

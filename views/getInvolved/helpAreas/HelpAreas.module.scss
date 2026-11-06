@@ -1,83 +1,67 @@
 @import '../../../styles/globals.scss';
+
 .container {
   padding: $pagePadding;
-  //   background-color: white;
-  //   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  background-color: white;
-  border-top: rgba(0, 0, 0, 0.132) 4px solid;
+  background-color: #ffffff;
+  border-top: 1px solid #e9ecf3;
+
   .title {
-    color: $red;
-    font-size: $fz-lg;
-    font-weight: 900;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 
-    // flex-wrap: wrap;
-    @include mobile {
-      font-size: $fz-md;
-      text-align: center;
-    }
     h1 {
-      flex: 0.2;
+      font-size: clamp(32px, 4.2vw, 50px);
+      line-height: 1.15;
+      font-weight: 700;
+      color: $red;
+      margin: 0 0 16px;
 
-      @include mobile {
-        margin-right: 0;
-        padding-right: 0;
-        border-right: none;
-      }
-
-      //   padding: 20px;
       span {
         color: $blue;
-        font-weight: 100;
+        font-weight: 500;
       }
     }
-    .descriptionContainer {
-      width: 100%;
-      .description {
-        font-weight: 900;
 
-        color: rgba(0, 0, 0, 0.661);
-        font-size: $fz-md;
-        @include mobile {
-          text-align: center;
-          font-size: $fz-sm;
-        }
+    .descriptionContainer {
+      max-width: 760px;
+      margin: 0 auto;
+
+      .description {
+        font-weight: 600;
+        color: #1f2430;
+        font-size: clamp(19px, 2vw, 24px);
+        line-height: 1.45;
+        margin: 0 0 10px;
       }
+
       .subDescription {
         font-weight: 300;
-        color: rgba(0, 0, 0, 0.796);
-        margin-top: 20px;
-        font-weight: 300;
-
-        font-size: $fz-md;
-
-        @include mobile {
-          text-align: center;
-          font-size: $fz-sm;
-        }
+        color: #535b6e;
+        font-size: clamp(16px, 1.7vw, 20px);
+        line-height: 1.55;
+        margin: 0;
       }
     }
   }
 
   .missionTeamDescription {
-    border-top: whitesmoke 1px solid;
-    padding-top: 50px;
-    margin-top: 50px;
-
-    font-size: $fz-xs;
-    color: rgb(74, 74, 74);
-    line-height: 50px;
-
-    @include mobile {
-      text-align: center;
-
-      font-size: $fz-xxs;
-    }
+    max-width: 920px;
+    margin: 36px auto 0;
+    padding-top: 32px;
+    border-top: 1px solid #ebedf3;
+    font-size: 16px;
+    font-weight: 300;
+    color: #485063;
+    line-height: 1.75;
+    text-align: center;
   }
 
   .helpAreaCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+    max-width: 1200px;
+    margin: 44px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
   }
 }
