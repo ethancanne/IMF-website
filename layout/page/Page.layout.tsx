@@ -7,6 +7,7 @@ import Menu from '../menu/Menu.layout';
 import Head from 'next/head';
 import Header from '../header/Header.layout';
 import { motion } from 'framer-motion';
+import DonationSuccessModal from '../../components/donationSuccessModal/DonationSuccessModal.component';
 type Props = {
   children: React.ReactNode;
   title: string;
@@ -28,6 +29,7 @@ const Page = (props: Props) => {
 
   return (
     <div className={styles.pageWrapper}>
+      <DonationSuccessModal />
       <motion.div
         className={styles.pageContainer}
         initial={{ opacity: 0, y: 20 }}
